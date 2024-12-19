@@ -14,7 +14,9 @@
     // Validate input
     if (!requestBody.short_description) {
         response.setStatus(400); // Bad Request
-        response.setBody({ error: "short_description is required." });
+        response.setBody({
+            error: "short_description is required."
+        });
         return;
     }
 
@@ -27,7 +29,10 @@
 
     // Return response
     response.setStatus(201); // Created
-    response.setBody({ message: "Incident created successfully", incident_number: incident.number });
+    response.setBody({
+        message: "Incident created successfully",
+        incident_number: incident.number
+    });
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_1040499_ip_looku/custom_incident_api/incident</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
@@ -42,14 +47,14 @@
         <sys_created_by>Srijan.Mal</sys_created_by>
         <sys_created_on>2024-12-19 06:47:42</sys_created_on>
         <sys_id>c4e27e3d53a2561005707ab0a0490e6f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Create Incident</sys_name>
         <sys_package display_value="IP Lookup" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
         <sys_scope display_value="IP Lookup">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_ws_operation_c4e27e3d53a2561005707ab0a0490e6f</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2024-12-19 06:48:52</sys_updated_on>
+        <sys_updated_on>2024-12-19 09:20:34</sys_updated_on>
         <web_service_definition display_value="Custom Incident API">9e227ef953a2561005707ab0a0490e1a</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
