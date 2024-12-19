@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1040499_ip_looku_ip_details</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>GetIPDetails</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    try {
+        var r = new sn_ws.RESTMessageV2('x_1040499_ip_looku.iPLookup', 'Default GET');
+		r.setQueryParameter('ip', current.enter_your_ip);
+
+
+
+        var response = r.executeAsync();
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+
+		var responseObj = JSON.parse(responseBody);
+		current.country = responseObj.country_code3;
+		current.city = responseObj.city;
+		current.currency = responseObj.currency.name;
+		current.time_zone = responseObj.time_zone.name;
+		current.update();
+    } catch (ex) {
+        var message = ex.message;
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2024-12-18 08:46:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9fe17961532ad21005707ab0a0490edf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>GetIPDetails</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IP Lookup" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IP Lookup">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sys_script_9fe17961532ad21005707ab0a0490edf</sys_update_name>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2024-12-18 08:55:13</sys_updated_on>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=9fe17961532ad21005707ab0a0490edf"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9fe17961532ad21005707ab0a0490edf</id>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2024-12-18 08:46:00</sys_created_on>
+        <sys_id>0e948661532ad21005707ab0a0490e9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2024-12-18 08:46:00</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
