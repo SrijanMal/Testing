@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>Inicdent (Catagory - Software)</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[var subject = email.subject; // Fetch the email subject
+var subjectParts = subject.split(':'); // Split by colon (:)
+if (subjectParts.length === 3) {
+    var action = subjectParts[0].toLowerCase();
+    var recordType = subjectParts[1];
+    var incomingSysId = subjectParts[2];
+
+    // Log the extracted data
+    gs.info('Action: ' + action + ', Record Type: ' + recordType + ', Incoming Sys ID: ' + incomingSysId);
+
+    // Ensure the target table is sysapproval_approver
+    if (recordType !== 'sysapproval_approver') {
+        gs.error('Invalid table: ' + recordType + '. This script only processes sysapproval_approver records.');
+    } else {
+        // Fetch all approval records
+        var gr = new GlideRecord('sysapproval_approver');
+        gr.query();
+
+        var isActionProcessed = false;
+
+        while (gr.next()) {
+            var documentSysId = gr.document_id.toString(); // Get the sys_id from document_id field
+
+            // Compare document_id with incoming sys_id
+            if (documentSysId === incomingSysId) {
+                gs.info('Matching Record Found: Approval Record Sys ID: ' + gr.sys_id + ' for Document ID: ' + gr.document_id);
+
+                // Process the action
+                if (action === 'approve') {
+                    gr.state = 'approved'; // Update the state to "approved"
+                    gs.info('Approval action processed for document: ' + gr.document_id);
+                } else if (action === 'reject') {
+                    gr.state = 'rejected'; // Update the state to "rejected"
+                    gs.info('Rejection action processed for document: ' + gr.document_id);
+                } else {
+                    gs.error('Invalid action in email subject: ' + action);
+                }
+
+                // Save the updated approval record
+                gr.update();
+                isActionProcessed = true;
+                break; // Exit the loop after processing the matching record
+            }
+        }
+
+        if (!isActionProcessed) {
+            gs.error('No matching approval record found where document_id matches Incoming Sys ID: ' + incomingSysId);
+        }
+    }
+} else {
+    gs.error('Invalid email subject format. Expected format: <action>:sysapproval_approver:<sys_id>');
+}]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2024-12-27 09:21:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba72a0245372d25005707ab0a0490ead</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Inicdent (Catagory - Software)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sysevent_in_email_action_ba72a0245372d25005707ab0a0490ead</sys_update_name>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2024-12-27 09:25:28</sys_updated_on>
+        <table>incident</table>
+        <template/>
+        <type>new</type>
+    </sysevent_in_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>ba72a0245372d25005707ab0a0490ead</id>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2024-12-27 09:21:15</sys_created_on>
+        <sys_id>12f268a05372d25005707ab0a0490ee7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2024-12-27 09:21:15</sys_updated_on>
+        <table>sysevent_in_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

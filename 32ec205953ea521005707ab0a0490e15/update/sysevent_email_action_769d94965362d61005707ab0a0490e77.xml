@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_update>true</action_update>
         <active>true</active>
         <advanced_condition/>
@@ -40,21 +40,38 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html/>
+        <message_html><![CDATA[<p>Hello ${assigned_to.display_value}, You have been assigned to an incident. Here are the details:&nbsp;</p>
+<table style="border-collapse: collapse; width: 82.9082%; height: 52.1406px;" border="1"><colgroup><col style="width: 50.0726%;"><col style="width: 50.0726%;"></colgroup>
+<tbody>
+<tr style="height: 18.375px;">
+<td style="height: 18.375px; text-align: center;"><strong>&nbsp; &nbsp; &nbsp; Incident Number</strong></td>
+<td style="height: 18.375px; text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp;${number}</td>
+</tr>
+<tr style="height: 18.375px; text-align: center;">
+<td style="height: 18.375px;">&nbsp; &nbsp; &nbsp; <strong>Short Description</strong></td>
+<td style="height: 18.375px;">&nbsp; &nbsp; &nbsp; &nbsp;${short_description}</td>
+</tr>
+<tr style="height: 15.3906px; text-align: center;">
+<td style="height: 15.3906px;">&nbsp; &nbsp; &nbsp; <strong>Priority</strong></td>
+<td style="height: 15.3906px;">&nbsp; &nbsp; &nbsp; &nbsp;${priority}</td>
+</tr>
+</tbody>
+</table>
+<p>Please take an action: <br><br><a style="padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px;" href="mailto:srijanmal7@gmail.com?subject=Approve:sysapproval_approver:${sys_id}">Approve</a> &nbsp;&nbsp; <a style="padding: 10px 20px; background-color: red; color: white; text-decoration: none; border-radius: 5px;" href="mailto:srijanmal7@gmail.com?subject=Reject:sysapproval_approver:${sys_id}"> Reject </a> <br><br>Regards, ServiceNow Team</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Incident (Catagory - Software)</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields/>
+        <recipient_fields>assigned_to</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject/>
+        <subject>Incident Assigned: ${number}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>Srijan.Mal</sys_created_by>
@@ -62,7 +79,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>769d94965362d61005707ab0a0490e77</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Incident (Catagory - Software)</sys_name>
         <sys_overrides/>
         <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
@@ -70,7 +87,7 @@
         <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sysevent_email_action_769d94965362d61005707ab0a0490e77</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2024-12-20 09:14:23</sys_updated_on>
+        <sys_updated_on>2024-12-30 07:29:56</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
