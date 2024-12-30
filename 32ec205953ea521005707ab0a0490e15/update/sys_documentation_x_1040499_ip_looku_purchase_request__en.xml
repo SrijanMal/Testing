@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Purchase Request" language="en" table="x_1040499_ip_looku_purchase_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Purchase Request</label>
+            <language>en</language>
+            <name>x_1040499_ip_looku_purchase_request</name>
+            <plural>Purchase Requests</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Srijan.Mal</sys_created_by>
+            <sys_created_on>2024-12-30 08:02:02</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Purchase Request</sys_name>
+            <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+            <sys_update_name>sys_documentation_x_1040499_ip_looku_purchase_request__en</sys_update_name>
+            <sys_updated_by>Srijan.Mal</sys_updated_by>
+            <sys_updated_on>2024-12-30 08:02:02</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

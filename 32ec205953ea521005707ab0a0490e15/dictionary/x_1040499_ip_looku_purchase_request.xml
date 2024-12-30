@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="777def1953721a5005707ab0a0490e0c" label="Purchase Request" max_length="40" name="x_1040499_ip_looku_purchase_request" type="collection">
+        <element choice="1" label="Approval Status" max_length="40" name="approval_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="Pending"/>
+                <element inactive_on_update="false" label="Approved" sequence="1" value="Approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="Rejected"/>
+            </choice>
+        </element>
+        <element label="Requested Amount" max_length="20" name="requested_amount" type="currency"/>
+        <element label="Requested By" mandatory="true" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <element display="true" label="Requested Item" mandatory="true" max_length="32" name="requested_item" reference="x_1040499_nexgente_ai_devices" type="reference"/>
+        <index name="index">
+            <element name="requested_by"/>
+        </index>
+        <index name="index2">
+            <element name="requested_item"/>
+        </index>
+    </element>
+</database>
