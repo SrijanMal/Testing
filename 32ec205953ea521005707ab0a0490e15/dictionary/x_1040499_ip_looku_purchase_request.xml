@@ -5,6 +5,9 @@
                 <element inactive_on_update="false" label="Pending" sequence="0" value="Pending"/>
                 <element inactive_on_update="false" label="Approved" sequence="1" value="Approved"/>
                 <element inactive_on_update="false" label="Rejected" sequence="2" value="Rejected"/>
+                <element inactive_on_update="false" label="Manager Approved" sequence="3" value="Manager Approved"/>
+                <element inactive_on_update="false" label="Finance Department Approved" sequence="4" value="Finance Department Approved"/>
+                <element inactive_on_update="false" label="Procurement Team Approved" sequence="5" value="Procurement Team Approved"/>
             </choice>
         </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
@@ -14,9 +17,8 @@
         <element attributes="edge_encryption_enabled=true" choice="1" label="Approval State" max_length="40" name="u_choice_1" type="string">
             <choice>
                 <element inactive_on_update="false" label="Pending Finance Approval" sequence="0" value="pending finance approval"/>
-                <element inactive="true" inactive_on_update="true" label="Pending Manager Approva;" sequence="0" value="pending manager approva;"/>
-                <element inactive="true" inactive_on_update="true" label="Pending Manager Approval" sequence="0" value="pending manager approval"/>
                 <element inactive_on_update="false" label="Pending Procurement Approval" sequence="1" value="pending procurement approval"/>
+                <element inactive_on_update="false" label="Request Cancelled" sequence="2" value="Request Cancelled"/>
             </choice>
         </element>
         <index name="index">

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="ApprovalDecision Table">d56e0d3953fe5a5005707ab0a0490eb7</decision_table>
+        <label>Finance Approver: Finance Department</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2024-12-31 09:51:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e34099f953fe5a5005707ab0a0490ed0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Finance Approver: Finance Department</sys_name>
+        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sys_decision_multi_result_e34099f953fe5a5005707ab0a0490ed0</sys_update_name>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2024-12-31 09:51:43</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=e34099f953fe5a5005707ab0a0490ed0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>e34099f953fe5a5005707ab0a0490ed0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2024-12-31 09:51:43</sys_created_on>
+        <sys_id>e34099f953fe5a5005707ab0a0490ed1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2024-12-31 09:51:43</sys_updated_on>
+        <value>5b5aa035533e5a5005707ab0a0490e3a</value>
+        <variable display_value="Finance Approver">534099f953fe5a5005707ab0a0490ea1</variable>
+    </sys_variable_value>
+</record_update>
