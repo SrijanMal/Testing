@@ -3,7 +3,7 @@
         <active>false</active>
         <applies_extended>false</applies_extended>
         <condition/>
-        <description>This client script is created for fetching server data by using gr_scratchpad property.  The main aim of this script is when a user create a problem task from a problem, then the short description , decription, assigned to fields are auto populated from the problem table.</description>
+        <description>This client script is created for accessing server data by using gr_scratchpad property.  The main aim of this script is when a user create a problem task from a problem, then the short description , decription, assigned to fields are auto populated from the problem table.</description>
         <field/>
         <global>true</global>
         <isolate_script>true</isolate_script>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8f4d55a853571a5005707ab0a0490ebd</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Display Info</sys_name>
         <sys_overrides/>
         <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_script_client_8f4d55a853571a5005707ab0a0490ebd</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-01-21 10:23:34</sys_updated_on>
+        <sys_updated_on>2025-01-21 10:38:51</sys_updated_on>
         <table>problem_task</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
