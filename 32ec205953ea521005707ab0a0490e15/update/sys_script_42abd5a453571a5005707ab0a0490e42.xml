@@ -11,14 +11,16 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>incident</collection>
+        <collection>problem_task</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="problem_task">problemISNOTEMPTY^EQ<item endquery="false" field="problem" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>GetEmail </name>
+        <name>getProblemDetails</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,36 +32,44 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	g_scratchpad.store_email = current.caller_id.email;
+
+	//this business rule is used to fetch server data from client script using gr_scratchpad.
+	
+	var gr = new GlideRecord('problem');
+	gr.get(current.problem);
+	g_scratchpad.parent = current.problem;
+	g_scratchpad.short_description = gr.short_description;
+	g_scratchpad.description = gr.description;
+	g_scratchpad.assigned_to = gr.assigned_to;
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>Srijan.Mal</sys_created_by>
-        <sys_created_on>2025-01-21 09:18:52</sys_created_on>
+        <sys_created_on>2025-01-21 10:06:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>938151a853171a5005707ab0a0490e62</sys_id>
+        <sys_id>42abd5a453571a5005707ab0a0490e42</sys_id>
         <sys_mod_count>3</sys_mod_count>
-        <sys_name>GetEmail </sys_name>
+        <sys_name>getProblemDetails</sys_name>
         <sys_overrides/>
         <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
         <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name>sys_script_938151a853171a5005707ab0a0490e62</sys_update_name>
+        <sys_update_name>sys_script_42abd5a453571a5005707ab0a0490e42</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-01-21 10:20:00</sys_updated_on>
+        <sys_updated_on>2025-01-21 10:27:02</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=938151a853171a5005707ab0a0490e62"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=42abd5a453571a5005707ab0a0490e42"/>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>938151a853171a5005707ab0a0490e62</id>
+        <id>42abd5a453571a5005707ab0a0490e42</id>
         <sys_created_by>Srijan.Mal</sys_created_by>
-        <sys_created_on>2025-01-21 09:18:51</sys_created_on>
-        <sys_id>6622d1a853171a5005707ab0a0490e04</sys_id>
+        <sys_created_on>2025-01-21 10:06:23</sys_created_on>
+        <sys_id>f60d51ac53171a5005707ab0a0490e26</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-01-21 09:18:51</sys_updated_on>
+        <sys_updated_on>2025-01-21 10:06:23</sys_updated_on>
         <table>sys_script</table>
         <use_es_latest>true</use_es_latest>
     </sys_es_latest_script>
