@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Creating a Task with input and output in subflow</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>task_created_number</internal_name>
+        <label_cache>[{"name":"e9ad9cf7-929c-4a99-aa4a-e570d066273a.item.user.email","label":"2 - For Each➛Group Member Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"ef9745c8-cba7-4555-828a-1cee68aabaf6":["ah_to"]}},{"name":"subflow.user_id","label":"Input➛user_id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"c5962b2f-ffbf-42d6-a33a-a47f8e150d6a":["condition"],"ef9745c8-cba7-4555-828a-1cee68aabaf6":[null],"b875fa7c-16bf-4009-a32c-b57538d36514":["team_notified-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ede5c7c9-0f83-4cbd-9221-1524b52afbde","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"e9ad9cf7-929c-4a99-aa4a-e570d066273a.item.user.user_name","label":"2 - For Each➛Group Member Record➛User➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","usedInstances":{"c5962b2f-ffbf-42d6-a33a-a47f8e150d6a":["condition"]}},{"name":"8f4e981f-f025-4ae4-9cbf-ef7185a5923f.Records","label":"1 - Look Up Records➛Group Member Records","reference":"sys_user_grmember","reference_display":"Group Member Records","type":"records","base_type":"records","usedInstances":{"e9ad9cf7-929c-4a99-aa4a-e570d066273a":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.group","label":"Input➛group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f4e981f-f025-4ae4-9cbf-ef7185a5923f":["conditions"],"ef9745c8-cba7-4555-828a-1cee68aabaf6":[null],"b875fa7c-16bf-4009-a32c-b57538d36514":["team_notified-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"fc4a403d-0150-4bdd-a039-831ba702df20","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Task Created Number</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:31:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>66c3efb75327521005707ab0a0490e4a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Task Created Number</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sys_hub_flow_66c3efb75327521005707ab0a0490e4a</sys_update_name>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:49:27</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=66c3efb75327521005707ab0a0490e4a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=66c3efb75327521005707ab0a0490e4a"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_66c3efb75327521005707ab0a0490e4a^id=66c3efb75327521005707ab0a0490e4a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=66c3efb75327521005707ab0a0490e4a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=66c3efb75327521005707ab0a0490e4a^sys_idNOT INeac3efb75327521005707ab0a0490e4d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>66c3efb75327521005707ab0a0490e4a</id>
+        <name>Task Created Number</name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:31:02</sys_created_on>
+        <sys_id>eac3efb75327521005707ab0a0490e4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:31:02</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=eac3efb75327521005707ab0a0490e4d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=66c3efb75327521005707ab0a0490e4a^sys_idNOT IN4ea7af3f5327521005707ab0a0490ed2,cea7af3f5327521005707ab0a0490edc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ede5c7c9-0f83-4cbd-9221-1524b52afbde</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>user_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Task Created Number">66c3efb75327521005707ab0a0490e4a</model>
+        <model_id>66c3efb75327521005707ab0a0490e4a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_66c3efb75327521005707ab0a0490e4a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:56</sys_created_on>
+        <sys_id>4ea7af3f5327521005707ab0a0490ed2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:47:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4ea7af3f5327521005707ab0a0490ed2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fc4a403d-0150-4bdd-a039-831ba702df20</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>group</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>group</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Task Created Number">66c3efb75327521005707ab0a0490e4a</model>
+        <model_id>66c3efb75327521005707ab0a0490e4a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_66c3efb75327521005707ab0a0490e4a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:56</sys_created_on>
+        <sys_id>cea7af3f5327521005707ab0a0490edc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:47:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cea7af3f5327521005707ab0a0490edc"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=66c3efb75327521005707ab0a0490e4a^sys_idNOT IN46a7ef3f5327521005707ab0a0490e00"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=739f27f4-9939-40f0-9680-0f28958892f8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>team_notified</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Team Notified</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Task Created Number">66c3efb75327521005707ab0a0490e4a</model>
+        <model_id>66c3efb75327521005707ab0a0490e4a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_66c3efb75327521005707ab0a0490e4a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:57</sys_created_on>
+        <sys_id>46a7ef3f5327521005707ab0a0490e00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:47:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=46a7ef3f5327521005707ab0a0490e00"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=66c3efb75327521005707ab0a0490e4a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=66c3efb75327521005707ab0a0490e4a"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=66c3efb75327521005707ab0a0490e4a^sys_idNOT IN12a7ef3f5327521005707ab0a0490e09,d2a7ef3f5327521005707ab0a0490e0f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Task Created Number">66c3efb75327521005707ab0a0490e4a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:57</sys_created_on>
+        <sys_id>12a7ef3f5327521005707ab0a0490e09</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:49:27</sys_updated_on>
+        <ui_id>8f4e981f-f025-4ae4-9cbf-ef7185a5923f</ui_id>
+        <values>H4sIAAAAAAAA/9VX30/bMBD+V6o8R1VCSmG8TSCmPQASIF4YspzEaa05dmY7LaXq/75zbKelDVC6boNH38/v7r5znPt5QPPgJDguBlGE48PjoyhKkigaDpMMx2maDLM0SgdpEAYclwQsNU4ZgeMEs9qc1UyhWhGJRrIkZUok6HKqKoZnd87kmxR11bvw2mxMWS4JD07uH8KgwhICa9CczNdUelYRxHBKGAS5NXl7lwZEuDXmZ86bNZgE/oi4DS1kbrBEYUAeNeE5gVQFZoqEQYl5jrWQs1YiCc6vOFsKxpRriBgY40dFnyD8cWTsCgJlZcTq2iNynbLibCxoRq4qTQW3EgvUKgWrS35pCzA9JgWumfY9BglMAeWkMpgNCIeouBmL6bVPeE55U55TMpFh1p6w1pKmtSbKzIIwUkIgVOKqonyEKikmtHEGLGV/xODQL5iYQlJFR7yPMwO8Dy3C/XOQnzXiOyypqeICwjTjLyiDaSPbdCVq2XRlgjJWq0YhMVc2VrBoeoV+1QalrdrVh2yLwEBlklb6KzhMiCtlEW5F68NoSYlM8JyanGqF2yND3L6x+FFDgHw+V3VqSu43msVik+vbuOy2AKerCLetrtO5q2S3Cs9kbhXiva0CwP1Py6Bl/fF24S1224LfoHh29CoJDpfzVkJqZDu3wvFNCu/M0HNKWP7sit4CnHe+MmTrpbOX8DqCFibH2l198Onv6g9JTwCUI9tvyhnlzacSgO6Ht9Hrl9eXNR404195dRgZVtkme3FPi97T7rdsM1fP3y1AescbQNS7tSg7gPv71Yd31E32Rt3k4H3UBeLcz1v0bdc6GuxfRGZ03v7J2ON1e2DXikO8eGipf7pbzvi9OQ9MzrXdTN61nKvMspqzFwi25/fWC8sW/s3tHoOry4fssqIpzUdEL7N7q1zoKWY/u/SOXe0ONeX98dtt8OruDePlnsEOIEkUjGr18RbDY2PzeohDK97tdvjONRk1zdsWove8wI+96xZjJ3B3RdA2h+P0YI/vr3/xefON79we3/9P8bOyK4UffgNR+rQhVw8AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Task Created Number">66c3efb75327521005707ab0a0490e4a</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>c5962b2f-ffbf-42d6-a33a-a47f8e150d6a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:57</sys_created_on>
+        <sys_id>d2a7ef3f5327521005707ab0a0490e0f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:47:57</sys_updated_on>
+        <ui_id>ef9745c8-cba7-4555-828a-1cee68aabaf6</ui_id>
+        <values>H4sIAAAAAAAA/+1ZUW/bNhD+K6yeLVe2bCtKn7oG3QKs7dAG3UNTCBRJ2WwlUaOoOl4QYO/7CQP24/ZLdqQky4pjW7XbLF39lOh4d/zu7rsTRb+7tji1Tq0RPXEmYTTCnuMOXcc5Gfp+6PqRc+L5zoBQq2elOGGgKRkRUj9/wnGhBfAv5XkW48XbRkJmPKaSpdbpu/c9K8MSjBWT1un1rSW1yFgQ45DFYHgmSJGwVKHzM/DRFVhtfYHllCn0ugZ4G7DeCp5ptUnAtRCWNCynZ7ErxVLKYNMIxznrWQlOKVZCLpYSyTB9lcaNYMZTBS6f5rkgHCuWIzVjiCWYx2jO1QxhVG7ft7S/q5z/DhDcoXYVMUgC0Yh4SjgFRNaKOKhyCsvnzTKZCU7Yq0xxkZaJVjiM65yLuEjSl2XUuioswkWsVqpS5OCXZTpMjVvJAmKI3szE/HW973OemoRUAcaC4Hj5hJWSPCwgTlPImGHZ+AsMJO0TdmIxMzlOcJbxdBpkUnzixjHATPrTGB76USzmYJ/zadrHRMfUh4Tj/nOQnxnxWyy5DvAFuAHjG5Og4LdCYypDbG+udQNTd1DNieSZegqOP7EqhJtexfeBv41WdNTQZ8XnV+H8hfaPXpb+u2JrGW/AWtG9JavYPjiI7RdAcVX2WklupCoYS4afOG2Gb2D2F2d0BXRvSn8d2kJd86BkYxWb2XwnnXeR2JlMwnASjj23IYpPIuqF0QR7xG2IMYfZJBMsPwZmNq0webBO5aqF96QzGD9+bsLrdUZZG8OkiwvK0K813G0RVPwOhYA5lDbkHh5E7pKJSAkEtYsXMMCXO2thM97VDCvEc5RDufroQiBegV+x6KGFKFBS5ArUFKy02qb1ThjdS8dUpa2kZ3fW/ZtoqUNbZ7x9xuKGeHgWKLHSMNfXzMcUCOzZ/tAn9gj7vo3xCNts7DkU2D70XNzniiV9SKXsG7rc3KD1RjvE1X7d+QYqk07rzuyQhGVbi/WMVA2Y1z6r/nO391956Fhrv5VXh3N8ebReHpTFPOGmuGWPHkp+urXuzGmVmpCvc+5pU7EDpNrw2bN1fBuoONrvVXDk4v1xcbD1+45NWrUO74eMHTDVhj/cYmO4jY7jIx0fOh3H20tPWsXOi/ADI2qFki/ZHP0oRZGhFywJS4htit6h8UVe5btxLw2XqO+KZAN1J8eX+kM6vuKt5Y6G7Zkk6GKFo5eF47gkQxqhrXi6SAiTQqgQ0vDRLNJL67JUY6VynuEUkRjneb2ujQOgqkac8Ti+tFCuFjFbrpcVPYWvopin7AmsE5ECgRSj3NSz1jSBwbKBo10ZnPXq9XVEAyVxmkdCJqcER+7YCQf2mFA4L4dDx8YTEtqjgceY47Eh8YY3N93Aw1YIYUJYpvJmiyAqUlPBHDABUM2Uq9rQuecwqhqxXHFauzoD0S/g/5x2CdNAsSvM5i+Gcshdptoq76IE4K7UEih8iiue2Q1Y86lghBciu61Woap1z9OsUEg/DSdT9QTpL56A74zSoMjhw1rVmsZRqf5Y63ewx1KKefd8mlFqE6C/+lyj1k7//P3XBpy7BRsigSlSe68TuO8OMAOVSFFTzfUmCSJMMGVBF0Lr3lmFu9EbSsVKP+prGM5AH+kRWmaxdvEKhiZaqqLaD8o4+cgkAiEyZIA8d2RTOa7scvbaHCh6h8Xdky4VZs5Vlf3jz855L/P8ebVZEaAZztEHAbCpuZ56YCPbOcHYDcPIDl3q2SNCBnboE8cOR77rOeOQjk8G38DI7hrGdz2yp/pgexzY+w7sMn33MK67kPm/HdedmPQtDmsTWB+9wQs0448ePao0yrKz9e/Fcj3rMh0/Z7R/mWn7YIbZceIcj4jHs91xABwHwPd85Pj/tf/O08J+d8c/Xbz4ub457nCVuPyxo7xIXLtZrO6MZyqJmxtj78AfOybjsTs53hmv/tqRzemQSpFlVWwH/eLx/l/pzkjz+ykAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=66c3efb75327521005707ab0a0490e4a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=66c3efb75327521005707ab0a0490e4a^sys_idNOT IN12a7ef3f5327521005707ab0a0490e0d,d2a7ef3f5327521005707ab0a0490e0b,dc08e77f5327521005707ab0a0490eaa"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5aa7ef3f5327521005707ab0a0490e0c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Task Created Number">66c3efb75327521005707ab0a0490e4a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>e9ad9cf7-929c-4a99-aa4a-e570d066273a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:57</sys_created_on>
+        <sys_id>12a7ef3f5327521005707ab0a0490e0d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:49:27</sys_updated_on>
+        <ui_id>c5962b2f-ffbf-42d6-a33a-a47f8e150d6a</ui_id>
+        <values>H4sIAAAAAAAA/+1UTY/TMBD9K5BzGjlJP0hvK9BKSMBK7Gov7Cqa2E5r4djBdtotUf4743y0FdsVCMGNSxU/Z2bee5nXNtCNqxtn7/SVtWKjgvWXxzAQymP43AYKKh6sA6oVE05olfdAGOxANv4CH5mwtYTD/QmhWyGZ4WO3GgzWOG6CdfvTlTvUPJdQcImFt84ItcFywfBUEijjjMY0TZZpQkjyZh4Xy7SIE5YChxTfmwrfTuRefeiR8EXWfh7idpqkDfO0YhIG/MlxxTiOLkFaHgYVKAZOm8MRMRzYjZInYCuUGxRX8GTFd+ydLBb+xZKjRjracTzmo1WTS1pQflN7ggPioJCThVo2lfo06PAm8xIa6c5Mbiz247Un7VmMlMrbrd5/ngZeC9ULHC+lpiCPJ3BoQ9E4bv2H4ZJX2CivoK7RnLw2eif6YuRSRRuJh6iUeo9D/aZEQD3xCD2C6Brxdz18D0Z4FR+xDRYPNAuwgub9VmE7Z1BC19uSf2s8oUHgKCUf3MAXLDWidlc4Z8dH1l34fCXPtrFteQYso+VqliUZnc0hy2YAc5jxxYowslwmqxQi4XgVITHT//TL0XWvHxpCUta2tim8zuFOsK57vuP/bM7fSE4Gi3IRk8Xl5MyXl5JzITMvxyX5RVz8B/7NtBBC/sflPC7C5sPaj9r64X+clkcfjWGCHfaGcSosErnz2Pvpf95fHHABBD2H9tp89RJOWPcD04T2bDEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">56a7ef3f5327521005707ab0a0490e0a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Task Created Number">66c3efb75327521005707ab0a0490e4a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:57</sys_created_on>
+        <sys_id>d2a7ef3f5327521005707ab0a0490e0b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:49:27</sys_updated_on>
+        <ui_id>e9ad9cf7-929c-4a99-aa4a-e570d066273a</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj+SLM6twFCgh7ZAV/QyFAYtUYkwWdIkOaln5L+Pip106HEnm4/k43siR2b76PoYXu1dCGpv2O7n+4IpkzD6H5mBDtmOqYhdYAt2BN2neBy3coX1tpBLmZfr5Qpwtax5K5covxXbNazrspLZC3LrRTifqVWo4DQMb//PwA9KC4+zSAeetEX0bDd+ScXBYaOhRU2DZgbqV4LCohayLvKaV+WmKvO83K6KdlO1RSkqQLGhumvnw2z6yxskdgr9jZc+SUWZLxh+RDQCaZAEHXDBOjACovUD20XfE+ARxLPRw63ioEwkOpZqP4L6Q9xFnqdCieSI45S8hc38kBPMD1ZxfHZRWTMhEVo993Cr+848TfLTClBCr+N1BYT0gfjQJc1JxSxJ/jjY08t14L0yF39zUlsO+hZBjF61fcSQ1oAaOyJqOnBOmX3jvD2qSzNp6bK9piCT2p5oaDq3DHgSntETQXZP+PcL/AZeJRePREPN54v75nef5k4+ZsXNZJoKAvfKxTuiO+Is7vye7nViCtNhCOQq0MDXhD1crzwlBlqy4v9CJ+t/Jamf2PkvqzhpBC8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1808e77f5327521005707ab0a0490eaa</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Task Created Number">66c3efb75327521005707ab0a0490e4a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>team_notified</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:49:27</sys_created_on>
+        <sys_id>dc08e77f5327521005707ab0a0490eaa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:49:27</sys_updated_on>
+        <ui_id>b875fa7c-16bf-4009-a32c-b57538d36514</ui_id>
+        <values>H4sIAAAAAAAA/62QzWpCMRCFXyVkLSX+XC9157J76aYUmZtMdDAml0xyRS559ybYog/Q5Xx8HM6cWYacxpz4EPbMdPJy9zVLMnInN1vo0a5tt1713WqpVNerHgYFavOuUCm5kB6uWM2EcD36kMgSmooncLnxeeY8WBdub6cY8liKOAOLAdGLP1vYEMXTy4zxSKaUmmKIRwf3z38J02dyJmJ773shWUca014nmmq0BcdYKibflngoE0SCweHvaVATU/CHxj5ePHOvI5B+RbcQL63Ak5UfG7YjL2cBAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=66c3efb75327521005707ab0a0490e4a^sys_idNOT IN96a7ef3f5327521005707ab0a0490e11,dea7ef3f5327521005707ab0a0490e11"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>66c3efb75327521005707ab0a0490e4a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{subflow.user_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:57</sys_created_on>
+        <sys_id>96a7ef3f5327521005707ab0a0490e11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:47:57</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>caf350b1-5cdc-4b20-a6cb-417ee07e2c72</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>66c3efb75327521005707ab0a0490e4a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{subflow.group}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:57</sys_created_on>
+        <sys_id>dea7ef3f5327521005707ab0a0490e11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:47:57</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>08aa3bbf-b3d7-4cc1-b9c0-b493705bd581</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=66c3efb75327521005707ab0a0490e4a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user_id</element>
+        <help/>
+        <hint/>
+        <label>user_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_66c3efb75327521005707ab0a0490e4a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:56</sys_created_on>
+        <sys_id>4aa7af3f5327521005707ab0a0490edb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:47:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>group</element>
+        <help/>
+        <hint/>
+        <label>group</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_66c3efb75327521005707ab0a0490e4a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:56</sys_created_on>
+        <sys_id>c2a7af3f5327521005707ab0a0490edf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:47:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_66c3efb75327521005707ab0a0490e4a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>team_notified</element>
+        <help/>
+        <hint/>
+        <label>Team Notified</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_66c3efb75327521005707ab0a0490e4a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-13 08:47:57</sys_created_on>
+        <sys_id>8ea7ef3f5327521005707ab0a0490e03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-13 08:47:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_66c3efb75327521005707ab0a0490e4a"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=66c3efb75327521005707ab0a0490e4a"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=66c3efb75327521005707ab0a0490e4a"/>
+</record_update>
