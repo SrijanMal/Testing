@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" db_object_id="3a248d7b8d820210d0ad51af41866369" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="x_1040499_ip_looku_email" type="string"/>
+    </element>
+</database>
