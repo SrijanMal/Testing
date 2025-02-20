@@ -6,7 +6,7 @@
         <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -32,7 +32,7 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-    // use case :- create a field in problem table name as associate incident count. once an incident will attack to a problem record, the count will increase.
+    // use case :- create a field in problem table name as associate incident count. once an incident will attached to a problem record, the count will increase.
 
     var gr = new GlideRecord('problem');
     gr.addQuery('sys_id', current.problem_id);
@@ -51,7 +51,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>05ad5fca537b561005707ab0a0490ec6</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>associateIncidentCount</sys_name>
         <sys_overrides/>
         <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
@@ -59,7 +59,7 @@
         <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_script_05ad5fca537b561005707ab0a0490ec6</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-02-20 08:08:01</sys_updated_on>
+        <sys_updated_on>2025-02-20 09:27:20</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
