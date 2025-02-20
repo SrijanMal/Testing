@@ -4,20 +4,20 @@
         <active>true</active>
         <answer_table>sys_decision_multi_result</answer_table>
         <answer_type>reference</answer_type>
-        <delta/>
+        <delta display_value="ApprovalDecision Table delta">fec626b153bfd21005707ab0a0490e5a</delta>
         <description/>
         <enable_publishing>true</enable_publishing>
         <label/>
         <name>ApprovalDecision Table</name>
         <reference_qualifier/>
-        <status>published</status>
+        <status>draft</status>
         <sys_class_name>sys_decision</sys_class_name>
         <sys_created_by>Srijan.Mal</sys_created_by>
         <sys_created_on>2024-12-31 09:43:23</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d56e0d3953fe5a5005707ab0a0490eb7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>ApprovalDecision Table</sys_name>
         <sys_overrides/>
         <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
@@ -25,6 +25,6 @@
         <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_decision_d56e0d3953fe5a5005707ab0a0490eb7</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2024-12-31 09:54:11</sys_updated_on>
+        <sys_updated_on>2025-02-19 09:12:27</sys_updated_on>
     </sys_decision>
 </record_update>

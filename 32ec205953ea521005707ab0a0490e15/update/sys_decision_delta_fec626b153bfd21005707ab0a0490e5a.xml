@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_delta">
+    <sys_decision_delta action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <answer_table>sys_decision_multi_result</answer_table>
+        <answer_type>reference</answer_type>
+        <delta/>
+        <description/>
+        <enable_publishing>false</enable_publishing>
+        <label/>
+        <name>ApprovalDecision Table delta</name>
+        <parent display_value="ApprovalDecision Table">d56e0d3953fe5a5005707ab0a0490eb7</parent>
+        <reference_qualifier/>
+        <status>draft</status>
+        <sys_class_name>sys_decision_delta</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-19 09:12:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fec626b153bfd21005707ab0a0490e5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ApprovalDecision Table delta</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sys_decision_delta_fec626b153bfd21005707ab0a0490e5a</sys_update_name>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-19 09:12:23</sys_updated_on>
+    </sys_decision_delta>
+</record_update>
