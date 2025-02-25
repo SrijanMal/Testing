@@ -6,7 +6,7 @@
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -53,7 +53,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9fe17961532ad21005707ab0a0490edf</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>GetIPDetails</sys_name>
         <sys_overrides/>
         <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
@@ -61,7 +61,7 @@
         <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_script_9fe17961532ad21005707ab0a0490edf</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-01-27 09:52:51</sys_updated_on>
+        <sys_updated_on>2025-02-25 06:02:31</sys_updated_on>
         <template/>
         <when>async_always</when>
     </sys_script>

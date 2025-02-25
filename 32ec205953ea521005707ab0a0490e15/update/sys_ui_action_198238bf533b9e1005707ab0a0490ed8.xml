@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name/>
-        <active>true</active>
-        <client>false</client>
+        <active>false</active>
+        <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
@@ -14,10 +14,10 @@
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
-        <form_style>primary</form_style>
+        <form_style/>
         <format_for_configurable_workspace>false</format_for_configurable_workspace>
         <hint/>
-        <isolate_script>false</isolate_script>
+        <isolate_script>true</isolate_script>
         <list_action>false</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
@@ -26,46 +26,46 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <messages>submitted successfully.</messages>
-        <name>Submit</name>
+        <messages/>
+        <name>Get Weather Data</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.update();  // Save the record
-// gs.addInfoMessage('Incident submitted successfully.');
-action.setRedirectURL(current);  // Redirect to the updated record
-]]></script>
+        <script><![CDATA[function getWeatherData() {
+    var city = g_form.getValue('city'); // Assuming you have a field named 'city'
+    var ga = new GlideAjax('WeatherAPIIntegration');
+    ga.addParam('sysparm_name', 'getWeatherData');
+    ga.addParam('city', city);
+
+    ga.getXMLAnswer(function(response) {
+        var weatherData = JSON.parse(response);
+        if (weatherData) {
+            alert('Current weather in ' + city + ': ' + weatherData.weather[0].description);
+        } else {
+            alert('Failed to fetch weather data. Please check the logs for more details.');
+        }
+    });
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>Srijan.Mal</sys_created_by>
-        <sys_created_on>2024-12-18 09:00:37</sys_created_on>
+        <sys_created_on>2025-02-25 05:54:04</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>4527ce6d536ad21005707ab0a0490ec1</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Submit</sys_name>
+        <sys_id>198238bf533b9e1005707ab0a0490ed8</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Get Weather Data</sys_name>
         <sys_overrides/>
-        <sys_package display_value="IP Lookup" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
-        <sys_scope display_value="IP Lookup">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name>sys_ui_action_4527ce6d536ad21005707ab0a0490ec1</sys_update_name>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sys_ui_action_198238bf533b9e1005707ab0a0490ed8</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2024-12-18 09:09:14</sys_updated_on>
+        <sys_updated_on>2025-02-25 07:27:38</sys_updated_on>
         <table>x_1040499_ip_looku_ip_details</table>
         <ui11_compatible>true</ui11_compatible>
-        <ui16_compatible>false</ui16_compatible>
+        <ui16_compatible>true</ui16_compatible>
     </sys_ui_action>
-    <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>4527ce6d536ad21005707ab0a0490ec1</id>
-        <sys_created_by>Srijan.Mal</sys_created_by>
-        <sys_created_on>2024-12-18 09:00:36</sys_created_on>
-        <sys_id>48f78aad536ad21005707ab0a0490e4e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2024-12-18 09:00:36</sys_updated_on>
-        <table>sys_ui_action</table>
-        <use_es_latest>true</use_es_latest>
-    </sys_es_latest_script>
 </record_update>

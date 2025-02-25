@@ -3,7 +3,7 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
         <active>false</active>
@@ -15,12 +15,12 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="incident">work_notesVALCHANGES^EQ<item endquery="false" field="work_notes" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        <filter_condition table="incident">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Worknote transfer</name>
+        <name>Prevent Update Without ITIL Role</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,38 +31,30 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	// use case :- if work notes for an incident record changes, it should update the same work notes in the associate prob record also
-
-	//if a incident inherite form another incident. then check the parent inc is closed and as well as child inc is closed.
-
-	var gr  = new GlideRecord('problem');
-	gr.addQuery('sys_id', current.problem_id);
-	gr.query();
-
-	if(gr.next()){
-		gr.work_notes = current.work_notes.getJournalEntry(1); // this method is use get the work note details here
-	}
-
-	gr.update();
-
+	// Write a Script Include that contains a function to check if a user has a specific role. Use this Script Include in a Business Rule to prevent users without the "itil" role from updating incidents.
+    var checker = new UserRoleChecker();
+    if (!checker.hasRole(gs.getUserID(), 'itil')) {
+        gs.addErrorMessage('You do not have the required role to update incidents.');
+        current.setAbortAction(true);
+    }
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>Srijan.Mal</sys_created_by>
-        <sys_created_on>2025-02-20 07:34:48</sys_created_on>
+        <sys_created_on>2025-02-24 08:51:08</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>95c89706537b561005707ab0a0490eb4</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Worknote transfer</sys_name>
+        <sys_id>9ca1d86b53bf1e1005707ab0a0490ef3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Prevent Update Without ITIL Role</sys_name>
         <sys_overrides/>
         <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
         <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name>sys_script_95c89706537b561005707ab0a0490eb4</sys_update_name>
+        <sys_update_name>sys_script_9ca1d86b53bf1e1005707ab0a0490ef3</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-02-24 08:46:47</sys_updated_on>
+        <sys_updated_on>2025-02-24 10:14:17</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=95c89706537b561005707ab0a0490eb4"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=9ca1d86b53bf1e1005707ab0a0490ef3"/>
 </record_update>

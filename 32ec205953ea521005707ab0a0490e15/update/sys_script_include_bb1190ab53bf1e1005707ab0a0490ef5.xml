@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_1040499_ip_looku.UserRoleChecker</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>UserRoleChecker</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var UserRoleChecker = Class.create();
+UserRoleChecker.prototype = {
+    initialize: function() {},
+
+	//Write a Script Include that contains a function to check if a user has a specific role. Use this Script Include in a Business Rule to prevent users without the "itil" role from updating incidents.
+    
+    hasRole: function(userId, roleName) {
+        var user = new GlideRecord('sys_user');
+        if (user.get(userId)) {
+            return user.hasRole(roleName);
+        }
+        return false;
+    },
+    
+    type: 'UserRoleChecker'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-24 08:49:38</sys_created_on>
+        <sys_id>bb1190ab53bf1e1005707ab0a0490ef5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>UserRoleChecker</sys_name>
+        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sys_script_include_bb1190ab53bf1e1005707ab0a0490ef5</sys_update_name>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-24 10:14:11</sys_updated_on>
+    </sys_script_include>
+</record_update>
