@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="New Section" section_id="a735a1bb537f9e1005707ab0a0490ebc" sys_domain="global" table="x_1040499_ip_looku_ip_details" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city_name</element>
+            <position>0</position>
+            <sys_created_by>Srijan.Mal</sys_created_by>
+            <sys_created_on>2025-02-25 09:33:51</sys_created_on>
+            <sys_id>3b35a1bb537f9e1005707ab0a0490ee5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1040499_ip_looku_ip_details" sys_domain="global" view="Default view">a735a1bb537f9e1005707ab0a0490ebc</sys_ui_section>
+            <sys_updated_by>Srijan.Mal</sys_updated_by>
+            <sys_updated_on>2025-02-25 09:33:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>Srijan.Mal</sys_created_by>
+            <sys_created_on>2025-02-25 09:33:51</sys_created_on>
+            <sys_id>bf35a1bb537f9e1005707ab0a0490ee5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1040499_ip_looku_ip_details" sys_domain="global" view="Default view">a735a1bb537f9e1005707ab0a0490ebc</sys_ui_section>
+            <sys_updated_by>Srijan.Mal</sys_updated_by>
+            <sys_updated_on>2025-02-25 09:33:51</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>2</position>
+            <sys_created_by>Srijan.Mal</sys_created_by>
+            <sys_created_on>2025-02-25 09:33:51</sys_created_on>
+            <sys_id>3735a1bb537f9e1005707ab0a0490ee6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1040499_ip_looku_ip_details" sys_domain="global" view="Default view">a735a1bb537f9e1005707ab0a0490ebc</sys_ui_section>
+            <sys_updated_by>Srijan.Mal</sys_updated_by>
+            <sys_updated_on>2025-02-25 09:33:51</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>3</position>
+            <sys_created_by>Srijan.Mal</sys_created_by>
+            <sys_created_on>2025-02-25 09:33:51</sys_created_on>
+            <sys_id>bb35a1bb537f9e1005707ab0a0490ee6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1040499_ip_looku_ip_details" sys_domain="global" view="Default view">a735a1bb537f9e1005707ab0a0490ebc</sys_ui_section>
+            <sys_updated_by>Srijan.Mal</sys_updated_by>
+            <sys_updated_on>2025-02-25 09:33:51</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>currency</element>
+            <position>4</position>
+            <sys_created_by>Srijan.Mal</sys_created_by>
+            <sys_created_on>2025-02-25 09:33:51</sys_created_on>
+            <sys_id>3335a1bb537f9e1005707ab0a0490ee7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1040499_ip_looku_ip_details" sys_domain="global" view="Default view">a735a1bb537f9e1005707ab0a0490ebc</sys_ui_section>
+            <sys_updated_by>Srijan.Mal</sys_updated_by>
+            <sys_updated_on>2025-02-25 09:33:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>time_zone</element>
+            <position>5</position>
+            <sys_created_by>Srijan.Mal</sys_created_by>
+            <sys_created_on>2025-02-25 09:33:51</sys_created_on>
+            <sys_id>b735a1bb537f9e1005707ab0a0490ee7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1040499_ip_looku_ip_details" sys_domain="global" view="Default view">a735a1bb537f9e1005707ab0a0490ebc</sys_ui_section>
+            <sys_updated_by>Srijan.Mal</sys_updated_by>
+            <sys_updated_on>2025-02-25 09:33:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>Srijan.Mal</sys_created_by>
+            <sys_created_on>2025-02-25 09:33:51</sys_created_on>
+            <sys_id>3f35a1bb537f9e1005707ab0a0490ee7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1040499_ip_looku_ip_details" sys_domain="global" view="Default view">a735a1bb537f9e1005707ab0a0490ebc</sys_ui_section>
+            <sys_updated_by>Srijan.Mal</sys_updated_by>
+            <sys_updated_on>2025-02-25 09:33:51</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>country</element>
+            <position>7</position>
+            <sys_created_by>Srijan.Mal</sys_created_by>
+            <sys_created_on>2025-02-25 09:33:51</sys_created_on>
+            <sys_id>b335a1bb537f9e1005707ab0a0490ee8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1040499_ip_looku_ip_details" sys_domain="global" view="Default view">a735a1bb537f9e1005707ab0a0490ebc</sys_ui_section>
+            <sys_updated_by>Srijan.Mal</sys_updated_by>
+            <sys_updated_on>2025-02-25 09:33:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>enter_your_ip</element>
+            <position>8</position>
+            <sys_created_by>Srijan.Mal</sys_created_by>
+            <sys_created_on>2025-02-25 09:33:51</sys_created_on>
+            <sys_id>3b35a1bb537f9e1005707ab0a0490ee8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1040499_ip_looku_ip_details" sys_domain="global" view="Default view">a735a1bb537f9e1005707ab0a0490ebc</sys_ui_section>
+            <sys_updated_by>Srijan.Mal</sys_updated_by>
+            <sys_updated_on>2025-02-25 09:33:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_1040499_ip_looku_ip_details</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Srijan.Mal</sys_created_by>
+            <sys_created_on>2025-02-25 09:33:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a735a1bb537f9e1005707ab0a0490ebc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1040499_ip_looku_ip_details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+            <sys_update_name>sys_ui_section_a735a1bb537f9e1005707ab0a0490ebc</sys_update_name>
+            <sys_updated_by>Srijan.Mal</sys_updated_by>
+            <sys_updated_on>2025-02-25 09:33:51</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

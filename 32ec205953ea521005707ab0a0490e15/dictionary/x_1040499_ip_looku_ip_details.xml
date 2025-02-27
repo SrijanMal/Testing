@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="44cf65ad53e6d21005707ab0a0490e6d" label="IP Details" max_length="40" name="x_1040499_ip_looku_ip_details" type="collection">
         <element label="City" max_length="100" name="city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="City Name" max_length="40" name="city_name" type="string"/>
         <element label="Country" max_length="100" name="country" type="string"/>
         <element label="Currency" max_length="100" name="currency" type="string"/>
         <element label="Enter Your IP" max_length="50" name="enter_your_ip" type="string"/>

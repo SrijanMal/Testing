@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name/>
-        <active>false</active>
+        <action_name>Client</action_name>
+        <active>true</active>
         <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
@@ -28,20 +28,30 @@
         <list_style/>
         <messages/>
         <name>Get Weather Data</name>
-        <onclick/>
+        <onclick>getWeatherData()</onclick>
         <order>100</order>
         <script><![CDATA[function getWeatherData() {
-    var city = g_form.getValue('city'); // Assuming you have a field named 'city'
+    var city = g_form.getValue('city_name'); // Assuming you have a field named 'city'
+	if(!city){
+		alert('Please enter a city name.');
+		return;
+	}
     var ga = new GlideAjax('WeatherAPIIntegration');
     ga.addParam('sysparm_name', 'getWeatherData');
     ga.addParam('city', city);
 
     ga.getXMLAnswer(function(response) {
         var weatherData = JSON.parse(response);
-        if (weatherData) {
-            alert('Current weather in ' + city + ': ' + weatherData.weather[0].description);
+        if (weatherData.error) {
+            g_form.addInfoMessage('Error: ' + weatherData.error);
         } else {
-            alert('Failed to fetch weather data. Please check the logs for more details.');
+            var details = 
+			'City: '+ weatherData.city + '<br>'+
+			'Temperature: ' + weatherData.temperature + '<br>'+
+			'Weather: ' + weatherData.weather + '<br>' +
+			'Wind speed: '+ weatherData.wind_speed;
+
+			g_form.addInfoMessage(details);
         }
     });
 }]]></script>
@@ -55,7 +65,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>198238bf533b9e1005707ab0a0490ed8</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Get Weather Data</sys_name>
         <sys_overrides/>
         <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
@@ -63,7 +73,7 @@
         <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_ui_action_198238bf533b9e1005707ab0a0490ed8</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-02-25 07:27:38</sys_updated_on>
+        <sys_updated_on>2025-02-25 09:34:36</sys_updated_on>
         <table>x_1040499_ip_looku_ip_details</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
