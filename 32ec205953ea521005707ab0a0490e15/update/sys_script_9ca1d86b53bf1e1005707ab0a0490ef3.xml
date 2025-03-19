@@ -3,7 +3,7 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
         <active>false</active>
@@ -42,15 +42,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9ca1d86b53bf1e1005707ab0a0490ef3</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Prevent Update Without ITIL Role</sys_name>
         <sys_overrides/>
-        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_script_9ca1d86b53bf1e1005707ab0a0490ef3</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-02-25 07:37:38</sys_updated_on>
+        <sys_updated_on>2025-03-19 09:22:28</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
