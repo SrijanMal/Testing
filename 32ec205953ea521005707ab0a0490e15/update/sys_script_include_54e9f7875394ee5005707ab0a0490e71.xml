@@ -25,7 +25,7 @@ SysUserUtils.prototype = {
             if (userGr.get(userSysID)) {
                 var ciGr = new GlideRecord('cmdb_ci');
                 ciGr.addQuery('owned_by', userSysID);
-                ciGr.addQuery('operational_status', '!=', 6);
+                ciGr.addEncodedQuery('owned_byISNOTEMPTY^operational_statusNOT IN2,6');
                 ciGr.query();
 
                 while (ciGr.next()) {
@@ -46,13 +46,13 @@ SysUserUtils.prototype = {
         <sys_created_by>Srijan.Mal</sys_created_by>
         <sys_created_on>2025-03-20 09:02:56</sys_created_on>
         <sys_id>54e9f7875394ee5005707ab0a0490e71</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>SysUserUtils</sys_name>
         <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_script_include_54e9f7875394ee5005707ab0a0490e71</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-03-21 06:36:10</sys_updated_on>
+        <sys_updated_on>2025-03-21 06:43:28</sys_updated_on>
     </sys_script_include>
 </record_update>
