@@ -33,6 +33,7 @@
         <script><![CDATA[var sysUserUtils = new SysUserUtils();
 var CiArray = sysUserUtils.getUserCIs(current.getValue('caller_id'));
  
+ //adding affected CI for the current incident.
 if (CiArray && CiArray.length > 0) {
     for (var i = 0; i < CiArray.length; i++) {
         var taskGr = new GlideRecord('task_ci');
@@ -56,7 +57,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4a3e3f0f5394ee5005707ab0a0490efd</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Add Caller's CIs</sys_name>
         <sys_overrides/>
         <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
@@ -64,7 +65,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_ui_action_4a3e3f0f5394ee5005707ab0a0490efd</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-03-21 06:32:28</sys_updated_on>
+        <sys_updated_on>2025-03-21 06:46:28</sys_updated_on>
         <table>incident</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
