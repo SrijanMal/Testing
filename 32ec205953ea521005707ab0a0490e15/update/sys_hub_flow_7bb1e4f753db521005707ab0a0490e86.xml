@@ -2,13 +2,12 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>false</active>
+        <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4141078000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>26000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
         <copied_from/>
         <copied_from_name/>
         <description>This subflow is used for fetching manager ID, email, phone number by using user ID of an user.</description>
@@ -16,9 +15,8 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>test_subflow</internal_name>
-        <label_cache>[{"name":"subflow.user_id","label":"Input➛user_id","type":"string","base_type":"string","usedInstances":{"4a9343f7-beb0-464b-b98d-35f6068d36f9":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1c02b627-053b-4dfd-83ea-32ea8841f4a0"}},{"name":"4a9343f7-beb0-464b-b98d-35f6068d36f9.Record.manager.user_name","label":"1 - Look Up Record➛User Record➛Manager➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","usedInstances":{"401f8971-fa27-492f-abbb-a86131626b57":["manager_id-0"]}},{"name":"4a9343f7-beb0-464b-b98d-35f6068d36f9.Record.manager.email","label":"1 - Look Up Record➛User Record➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"401f8971-fa27-492f-abbb-a86131626b57":["manager_email-1"]}},{"name":"4a9343f7-beb0-464b-b98d-35f6068d36f9.Record.manager.mobile_phone","label":"1 - Look Up Record➛User Record➛Manager➛Mobile phone","reference":"","reference_display":"Mobile phone","type":"ph_number","base_type":"ph_number","parent_table_name":"sys_user","column_name":"mobile_phone","usedInstances":{"401f8971-fa27-492f-abbb-a86131626b57":["phone_number-2"]}}]</label_cache>
-        <latest_snapshot/>
-        <master_snapshot/>
+        <label_cache>[{"name":"4a9343f7-beb0-464b-b98d-35f6068d36f9.Record.manager.mobile_phone","label":"1 - Look Up Record➛User Record➛Manager➛Mobile phone","reference":"","reference_display":"Mobile phone","type":"ph_number","base_type":"ph_number","parent_table_name":"sys_user","column_name":"mobile_phone","usedInstances":{"401f8971-fa27-492f-abbb-a86131626b57":["phone_number-2"]}},{"name":"4a9343f7-beb0-464b-b98d-35f6068d36f9.Record.manager.email","label":"1 - Look Up Record➛User Record➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"401f8971-fa27-492f-abbb-a86131626b57":["manager_email-1"]}},{"name":"4a9343f7-beb0-464b-b98d-35f6068d36f9.Record.manager.user_name","label":"1 - Look Up Record➛User Record➛Manager➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","usedInstances":{"401f8971-fa27-492f-abbb-a86131626b57":["manager_id-0"]}},{"name":"subflow.user_id","label":"Input➛user_id","type":"string","base_type":"string","usedInstances":{"4a9343f7-beb0-464b-b98d-35f6068d36f9":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1c02b627-053b-4dfd-83ea-32ea8841f4a0"}}]</label_cache>
+        <master_snapshot>2c74af875314ee5005707ab0a0490e7f</master_snapshot>
         <master_snapshot_digest/>
         <name>Test Subflow</name>
         <natlang/>
@@ -30,7 +28,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>Srijan.Mal</sys_created_by>
@@ -38,15 +36,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7bb1e4f753db521005707ab0a0490e86</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Test Subflow</sys_name>
         <sys_overrides/>
-        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_hub_flow_7bb1e4f753db521005707ab0a0490e86</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-01-31 08:13:58</sys_updated_on>
+        <sys_updated_on>2025-03-20 07:25:34</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -135,7 +133,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2025-01-31 08:09:46</sys_updated_on>
@@ -221,7 +219,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2025-01-31 08:09:46</sys_updated_on>
@@ -306,7 +304,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2025-01-31 08:09:46</sys_updated_on>
@@ -391,7 +389,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2025-01-31 08:09:46</sys_updated_on>
@@ -427,7 +425,7 @@
         <sys_created_on>2025-01-31 08:09:46</sys_created_on>
         <sys_id>5c42647b53db521005707ab0a0490ed9</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2025-01-31 08:13:58</sys_updated_on>
         <ui_id>4a9343f7-beb0-464b-b98d-35f6068d36f9</ui_id>
@@ -453,12 +451,12 @@
         <sys_created_by>Srijan.Mal</sys_created_by>
         <sys_created_on>2025-01-31 08:13:58</sys_created_on>
         <sys_id>39332cbb53db521005707ab0a0490e04</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-01-31 08:13:58</sys_updated_on>
+        <sys_updated_on>2025-03-20 07:25:32</sys_updated_on>
         <ui_id>401f8971-fa27-492f-abbb-a86131626b57</ui_id>
-        <values>H4sIAAAAAAAA/62TS4uDMBRG/0vWKmmNr+66nO1QZjMMJY9re2lMJFFLEf/7aMfBQqFdtEsPlyPfgfTEtk3dNn5nt97jwZDNd09QkQ1ZSbZOWSaSWIlkvaI0yWjGBeWUFRSEIgExvILxsuKGH8DtcWId1+0E+57xImZxmYUCBA1ZykQoilyFcVKmNM1VnJZF9AnSOhXNiqj1o2fSDsPoUuhrzS9fb1TKI2rlYNr5ExAvHdbNVjbYjT8oufbwD8mmH4ZgbpGwRy3k+r4FVBz1yzmulvelWHRPMyzT84fTk2V6fbQG9qatBLiXl1dWoIb91fm+AHfW5x1GjGZ6IX8nHXfIhYb5U4FEj9bsJvZxc6cuYxWUt+hs3anU9ryw4RdDwvMGfwMAAA==</values>
+        <values>H4sIAAAAAAAA/+1WyW7bMBD9F51NQQu15RagCBCgbYAkzaUoBC5Dmyi1RIsT1/C/dyjJduosDRIfcshRj5w3bx7nAVo7Vd/VfddeV6dtq+elc/Jz7WjpnDi+oEFMEx6FkkeB73lR4iWMe8yjmQdcOjOnZAXgzYKVbA5Nri22ZKa34HpNWRbSUCWEA/cIjSknPEslCSMVe3Eqw1hl7iWIqpHuROH2LfJY2s0GuaRua8NWN0ekFAttZAN2zl8zp2YNHnTQOCfrg6NuVUNuGAeDna+6RpdzLH+tM9vCf6x5yi7bBrF22wCVWzX+zIH7DkoJ2FAx08LM1knWVc1qhzTA5EVp9sBClx2yOfbyfav/IHXqeZ69qQBHEzCe7j7zyeIRFotKC7ioO12VI9IxbqYaUZm+KL+PM9jHAcV6020fBxF0OpdQW9VWxqRJXS2qu8ttwzNdDgNOh6YSzOy+WIc28L6D1r5Hr68PzBmRr4ePAgYK7JgXrK4RyeumWuqhC4ou3LnBD1eZ6g7V2R13mbATuugmc88Q/zLAN6zRdtxvSIPFtt2PUt/2cG4fPQ4irmIISBIBJTQMOWExD4jyY575SuICgLMZrM1vezvUaNJkRz46ihda0ei6O0UJS9hNPoI49WYzm/IX0Ze2TASPFwoKps27IziwHC9+e7pjRO8VphxGb+vKM2Y9E8DgM4AfLICMCaWo7xPOooRQSHzCEpWSIMriSCqMZxi8NYD70KUv7le036N6UZWQl33BB6nvy1xRcW0gHziPF71HrEdJ4P8d2hYeWPS0cc/kL/zM3wfLn2CZ5ML3iEqlIpTi8qVoP4khojIEKb0sfnP+cOd0af9Dx/1bTkqmTwlCtyj42mLnD+7JFS6VFg+hu6r5bUfdY5u/8Wx1z+UKAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=7bb1e4f753db521005707ab0a0490e86"/>
@@ -477,9 +475,9 @@
         <sys_id>5c42647b53db521005707ab0a0490e9b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2025-01-31 08:09:46</sys_updated_on>
@@ -501,9 +499,9 @@
         <sys_id>5442647b53db521005707ab0a0490ec1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2025-01-31 08:09:46</sys_updated_on>
@@ -524,9 +522,9 @@
         <sys_id>5442647b53db521005707ab0a0490ed4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2025-01-31 08:09:46</sys_updated_on>
@@ -547,9 +545,9 @@
         <sys_id>5842647b53db521005707ab0a0490ec4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2025-01-31 08:09:46</sys_updated_on>
@@ -557,6 +555,576 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7bb1e4f753db521005707ab0a0490e86"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This subflow is used for fetching manager ID, email, phone number by using user ID of an user.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>test_subflow</internal_name>
+        <label_cache>[{"name":"4a9343f7-beb0-464b-b98d-35f6068d36f9.Record.manager.mobile_phone","label":"1 - Look Up Record➛User Record➛Manager➛Mobile phone","reference":"","reference_display":"Mobile phone","type":"ph_number","base_type":"ph_number","parent_table_name":"sys_user","column_name":"mobile_phone","usedInstances":{"401f8971-fa27-492f-abbb-a86131626b57":["phone_number-2"]}},{"name":"4a9343f7-beb0-464b-b98d-35f6068d36f9.Record.manager.email","label":"1 - Look Up Record➛User Record➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"401f8971-fa27-492f-abbb-a86131626b57":["manager_email-1"]}},{"name":"4a9343f7-beb0-464b-b98d-35f6068d36f9.Record.manager.user_name","label":"1 - Look Up Record➛User Record➛Manager➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","usedInstances":{"401f8971-fa27-492f-abbb-a86131626b57":["manager_id-0"]}},{"name":"subflow.user_id","label":"Input➛user_id","type":"string","base_type":"string","usedInstances":{"4a9343f7-beb0-464b-b98d-35f6068d36f9":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1c02b627-053b-4dfd-83ea-32ea8841f4a0"}}]</label_cache>
+        <master>true</master>
+        <name>Test Subflow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Test Subflow">7bb1e4f753db521005707ab0a0490e86</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2c74af875314ee5005707ab0a0490e7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:33</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=2c74af875314ee5005707ab0a0490e7f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2c74af875314ee5005707ab0a0490e7f"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_2c74af875314ee5005707ab0a0490e7f^id=2c74af875314ee5005707ab0a0490e7f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2c74af875314ee5005707ab0a0490e7f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2c74af875314ee5005707ab0a0490e7f^sys_idNOT IN2074af875314ee5005707ab0a0490e81"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2c74af875314ee5005707ab0a0490e7f</id>
+        <name>Test Subflow</name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:33</sys_created_on>
+        <sys_id>2074af875314ee5005707ab0a0490e81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=2074af875314ee5005707ab0a0490e81"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2c74af875314ee5005707ab0a0490e7f^sys_idNOT IN6474af875314ee5005707ab0a0490e82"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1c02b627-053b-4dfd-83ea-32ea8841f4a0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>user_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Test Subflow">2c74af875314ee5005707ab0a0490e7f</model>
+        <model_id>2c74af875314ee5005707ab0a0490e7f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2c74af875314ee5005707ab0a0490e7f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:33</sys_created_on>
+        <sys_id>6474af875314ee5005707ab0a0490e82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6474af875314ee5005707ab0a0490e82"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2c74af875314ee5005707ab0a0490e7f^sys_idNOT IN2c74af875314ee5005707ab0a0490e94,7074af875314ee5005707ab0a0490eb0,e874af875314ee5005707ab0a0490e9c"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=625bf6e2-75e4-433b-a6b2-f16b91fd7abe</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>manager_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>manager_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Test Subflow">2c74af875314ee5005707ab0a0490e7f</model>
+        <model_id>2c74af875314ee5005707ab0a0490e7f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_2c74af875314ee5005707ab0a0490e7f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:33</sys_created_on>
+        <sys_id>2c74af875314ee5005707ab0a0490e94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2c74af875314ee5005707ab0a0490e94"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ca9dbc10-f8df-448d-8ead-6e54d3edd096</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>phone_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>phone_number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Test Subflow">2c74af875314ee5005707ab0a0490e7f</model>
+        <model_id>2c74af875314ee5005707ab0a0490e7f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_2c74af875314ee5005707ab0a0490e7f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:34</sys_created_on>
+        <sys_id>7074af875314ee5005707ab0a0490eb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7074af875314ee5005707ab0a0490eb0"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=aacff411-ba57-4e71-a7f8-25965df25b32</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>manager_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>manager_email</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Test Subflow">2c74af875314ee5005707ab0a0490e7f</model>
+        <model_id>2c74af875314ee5005707ab0a0490e7f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_2c74af875314ee5005707ab0a0490e7f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:33</sys_created_on>
+        <sys_id>e874af875314ee5005707ab0a0490e9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e874af875314ee5005707ab0a0490e9c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2c74af875314ee5005707ab0a0490e7f"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2c74af875314ee5005707ab0a0490e7f"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2c74af875314ee5005707ab0a0490e7f^sys_idNOT IN3874af875314ee5005707ab0a0490ed4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Test Subflow">2c74af875314ee5005707ab0a0490e7f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:34</sys_created_on>
+        <sys_id>3874af875314ee5005707ab0a0490ed4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:34</sys_updated_on>
+        <ui_id>4a9343f7-beb0-464b-b98d-35f6068d36f9</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcFgkMFOg2QJP20hYEJVIxsTSpklTSxPB/36FI2VpbsS3UARL0yOGQfDPz3mjsb6uQkfAyJLNols9m42kSRcNhFE0mwwzHaTqcZGmU4lHYCwVeUvA0OOUUlg+Yl3atnzQqNVVgIkwXHD999TtfnDVbME4UFeHltx+9sMAK7jGwc7na2ToVCMcp5eB655HsADNPxWaJqj1n+9g8FnxyG1IRCyXqhfSXoYJQwJBjrmkvXGJBsJHqaWNRFJMbwbeGBRMGbgyt8y/NnuHdaWT9cgpRZdTtbZbIJ8iZ82ts8K1RZWZK5V2zhWQZ1S4fhOa45OaqaXMON4VhUrgjLmx3WvJyKT65dISbC+p6gAUKhQgtbKAWuQ8jv13Ix881yjkTVU78JpcZ5psVNkaxtDQWzyqknC7hIrTERcHEPSqUfGDVYcCy7N9zWPRzLh/hUc3uRR9nFngf8or7c7BfV+avWDEbxT9wTUWZnHFgCHIl1LJUVSofUMZLXW0oLLS7K1z3LAWvONZ6GzmkHP0sLW6XBx8xckmzRzLFCvM3XPFAfXDrXq2F8UEKzraUy6QgzKLQDUFYMVS8+17CebJa6TK1OehXG4ys1/tSOelMRyEdj6IW0lUzjLbQvKT2bB/bLvCSis8mqVEUvSdRweNvT1PdVeJScEQqMTlIMrLlk5bKIJfLhlb2ldCZ5ydAqHl+Y5kZpE8vofI0zxnlpO3LMbcbO1+OwZ/55XiTJAdABLnqMcGZqMYAAPpa7B8fpF4a7/CsoldjcLI2rLN9DeDAyOC5sxJOgFMr4RbeDu4cnhaIdb+vKLPb62ujF8DwbAIYDs4jgNUmzE0iW3JeT362mrX/s/XHu/5AwcaBeN0msE5vxl3fHKz3BTzspOAm2dzO9QucO/OI+IIie6/ZAhZw1L+HnH7RIyP31Gxfr72INI+Y/9u27xmH6kJV4b3CuBkf/MWTNsZNlqMlVI4VMBUrmgE5NMKKolyWgiA/D/9vEIXcK228836j+UxBPyKQIMzALGhQeQcb744f4uNx1Kn8kAd1IP41HUAgQRVIsAmkW9hdmtbojMPpuZvWHDNeVQN+6hSNclKlpHqhcR0p5AFGnNjVTgQVnxXU77e9Ngm0tr8jWN/F7+bzt6aM4nQ0wJNkGMdRFEckiaZJEk8naT7BySjfahQhLTLopnBzDlSB61FNjbrO0X7/cS21a6M5AVVNwWsp7C/qQWICCwvqG9SwjgP3DSWVklMsdjrKHXwn/pp7/J6v4zfXVd7Fv0glu9vNtDO15vq15oaSfRHsZ0k/WIpNaTSYxiS7mCZxcjHKyeRiRvD4As/ScTIkNBvl5xwFfvwHNqhM/4cVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2c74af875314ee5005707ab0a0490e7f"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2c74af875314ee5005707ab0a0490e7f^sys_idNOT IN7474af875314ee5005707ab0a0490ed3"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f9332cbb53db521005707ab0a0490e03</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Test Subflow">2c74af875314ee5005707ab0a0490e7f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>manager_id,manager_email,phone_number</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:34</sys_created_on>
+        <sys_id>7474af875314ee5005707ab0a0490ed3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:34</sys_updated_on>
+        <ui_id>401f8971-fa27-492f-abbb-a86131626b57</ui_id>
+        <values>H4sIAAAAAAAA/+1WTU/jMBD9Lzk3Ub7TcEMgJCR2kYDlslpF43jcWjhOyEehW/W/77hJW9QCC2pPiFv8bD/PezNPysIqu7bq2uauPG0aOdHWye+FJbl1Ynl56MdhwqKAs8j3XDdK3ASYC26Yusi4NbI0FEgnC9AwwTqTBpuB6gy4WISQBmEgEpshc+0wDpnN0jG3g0jEbjzmQSxS5wbzsubOQOF0DfEY2uWSuLhsKgXz+yNS5lOpeI1G55+RVUFNGy3W1gmp1vShQV1J/UCv7R3+qCsKGKpdW16zqp1XBmvaWurJsL4aLt+uQZJiyvNGFj63qDlSFQJUgyNDxqEt6/kGqRH4tVZbYEqiei0FPDfyL703dl3XnBRIynLsdzfLbPC8h8U5tECldHnb1bg2pZQ5Nr0nHAV0qj17ifUHrqtWlrq/0gJT69ul6gr9s3fD2hCsW0wI9SvjWBmppvZBiLidlk836yovpF65MmyqMge1WUFL3rGuNfUsrE7e7djcI3tGo8KCXswKqCpCsqouZ3L1ChVdOBNFC0eo8omqM0lxIDcKHWoBOBeEn6/ge6ilkfuDaOiyee6Xlo8dXprxif2IiRh9O4kwtMMgYDbEzLeFF7PUE5xGCa3lyGrmzZmCptkaRR3KHjsjs7dtMCjrPTZX8lpW7SkVNcONFz1IPiyXoyHXUfjeBOf+/rBiAVIdHO0Vy/FivaU7NNIfMGQ30mtH3jDqM8H2v4P9FYINkAsRep7NIErsEBPPhkSMbT9K44gLin3gHy/Y2zCP353daDuj1bTUmOmuYKviD8tyUTKpMFtxHi/Se6wHJ/v/7qyTvWPP66Z9JtfBd66/Qq5zSDnLPdcWYy7sMKQRHlPP7BijkAfIuZvGR8y1mVxt/sf7zsyG2jbNy2VDEu4MdvniHJ/TwMr8JfRU1g9G/BZb/gOadtTj7QsAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2c74af875314ee5005707ab0a0490e7f"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2c74af875314ee5005707ab0a0490e7f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user_id</element>
+        <help/>
+        <hint/>
+        <label>user_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2c74af875314ee5005707ab0a0490e7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:33</sys_created_on>
+        <sys_id>6074af875314ee5005707ab0a0490e90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2c74af875314ee5005707ab0a0490e7f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>manager_email</element>
+        <help/>
+        <hint/>
+        <label>manager_email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_2c74af875314ee5005707ab0a0490e7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:33</sys_created_on>
+        <sys_id>3874af875314ee5005707ab0a0490ead</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>manager_id</element>
+        <help/>
+        <hint/>
+        <label>manager_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_2c74af875314ee5005707ab0a0490e7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:33</sys_created_on>
+        <sys_id>a074af875314ee5005707ab0a0490e9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>phone_number</element>
+        <help/>
+        <hint/>
+        <label>phone_number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_2c74af875314ee5005707ab0a0490e7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:34</sys_created_on>
+        <sys_id>b874af875314ee5005707ab0a0490eb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2c74af875314ee5005707ab0a0490e7f"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>7bb1e4f753db521005707ab0a0490e86</sys_id>
+        <latest_snapshot>2c74af875314ee5005707ab0a0490e7f</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=7bb1e4f753db521005707ab0a0490e86"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=7bb1e4f753db521005707ab0a0490e86"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=7bb1e4f753db521005707ab0a0490e86^sys_idNOT INf474af875314ee5005707ab0a0490edf"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@1317d1cd</plan>
+        <plan_id display_value="Test Subflow">7bb1e4f753db521005707ab0a0490e86</plan_id>
+        <snapshot>2c74af875314ee5005707ab0a0490e7f</snapshot>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-20 07:25:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f474af875314ee5005707ab0a0490edf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:25:34</sys_updated_on>
+    </sys_flow_subflow_plan>
 </record_update>
