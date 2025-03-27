@@ -18,7 +18,7 @@ UserRoleChecker.prototype = {
    hasRole: function(userId, roleName) {
         var gr = new GlideRecord('sys_user_has_role');
         gr.addQuery('user', userId);
-        gr.addQuery('role.name', roleName);
+        gr.addQuery('role', roleName);
         gr.query();
         return gr.hasNext();
     },
@@ -29,13 +29,13 @@ UserRoleChecker.prototype = {
         <sys_created_by>Srijan.Mal</sys_created_by>
         <sys_created_on>2025-02-24 08:49:38</sys_created_on>
         <sys_id>bb1190ab53bf1e1005707ab0a0490ef5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>UserRoleChecker</sys_name>
-        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_script_include_bb1190ab53bf1e1005707ab0a0490ef5</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-02-25 07:39:20</sys_updated_on>
+        <sys_updated_on>2025-03-25 09:15:12</sys_updated_on>
     </sys_script_include>
 </record_update>
