@@ -12,7 +12,7 @@
         <order/>
         <script><![CDATA[function onLoad() {
     //Type appropriate comment here, and begin script below
-    g_form.addDecoration('category', 'icon-lightbulb', 'Lightbuld', 'color-yellow');
+    g_form.addDecoration('category', 'icon-lightbulb', 'Lightbulb', 'color-yellow');
     var test = g_form.getValue('category');
     var test2 = g_form.getDisplayBox('caller_id').value;
     g_form.addInfoMessage(test2);
@@ -40,15 +40,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9b8b441b5307525005707ab0a0490ef5</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>GlideForm API Test</sys_name>
         <sys_overrides/>
-        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_script_client_9b8b441b5307525005707ab0a0490ef5</sys_update_name>
-        <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-01-17 07:45:08</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-27 10:01:52</sys_updated_on>
         <table>incident</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
