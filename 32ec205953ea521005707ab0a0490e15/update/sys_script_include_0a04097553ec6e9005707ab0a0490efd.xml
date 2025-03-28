@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1040499_ip_looku.SupportGroupUtills</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SupportGroupUtills</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SupportGroupUtills = Class.create();
+SupportGroupUtills.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+    getContactInfo: function() {
+        var returnValue = '';
+        var itemID = this.getParameter('sysparm_ci');
+        if (!gs.nil(itemID)) {
+            var itemGr = new GlideRecord('cmdb_ci');
+            if (itemGr.get(itemID)) {
+                returnValue = itemGr.support_group.email + ':' + itemGr.support_group.manager.phone;
+            }
+        }
+        return returnValue;
+    },
+
+    type: 'SupportGroupUtills'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-28 08:54:30</sys_created_on>
+        <sys_id>0a04097553ec6e9005707ab0a0490efd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>SupportGroupUtills</sys_name>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sys_script_include_0a04097553ec6e9005707ab0a0490efd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-28 09:16:10</sys_updated_on>
+    </sys_script_include>
+</record_update>
