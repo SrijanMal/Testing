@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_1040499_ip_looku.IncidentAssignment</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>When an incident is created or updated, it should be automatically assigned to the correct support group based on the incident category.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>IncidentAssignment</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var IncidentAssignment = Class.create();
+IncidentAssignment.prototype = {
+    initialize: function() {
+    },
+
+	getSupportGroup: function(category) {
+        var supportGroup = '';
+
+        switch (category) {
+            case 'Hardware':
+                supportGroup = 'Hardware';
+                break;
+            case 'Software':
+                supportGroup = 'Software Support';
+                break;
+            case 'Network':
+                supportGroup = 'Network Support';
+                break;
+            default:
+                supportGroup = 'Services Support';
+        }
+
+        return supportGroup;
+    },
+
+
+    type: 'IncidentAssignment'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-21 06:35:42</sys_created_on>
+        <sys_id>91c55ca65377d61005707ab0a0490ea3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>IncidentAssignment</sys_name>
+        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sys_script_include_91c55ca65377d61005707ab0a0490ea3</sys_update_name>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-21 06:54:45</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</application>
+        <file_path/>
+        <instance_id>4ffbec40db4ab514199b1729139619aa</instance_id>
+        <instance_name>dev188595</instance_name>
+        <name>sys_script_include_91c55ca65377d61005707ab0a0490ea3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_1040499_ip_looku.IncidentAssignment&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;When an incident is created or updated, it should be automatically assigned to the correct support group based on the incident category.&lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;IncidentAssignment&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var IncidentAssignment = Class.create();
+IncidentAssignment.prototype = {
+    initialize: function() {
+    },
+
+	getSupportGroup: function(category) {
+        var supportGroup = '';
+
+        switch (category) {
+            case 'Hardware':
+                supportGroup = 'Hardware';
+                break;
+            case 'Software':
+                supportGroup = 'Software Support';
+                break;
+            case 'Network':
+                supportGroup = 'Network Support';
+                break;
+            default:
+                supportGroup = 'Services Support';
+        }
+
+        return supportGroup;
+    },
+
+
+    type: 'IncidentAssignment'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Srijan.Mal&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-21 06:35:42&lt;/sys_created_on&gt;&lt;sys_id&gt;91c55ca65377d61005707ab0a0490ea3&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;IncidentAssignment&lt;/sys_name&gt;&lt;sys_package display_value="REST API" source="x_1040499_ip_looku"&gt;32ec205953ea521005707ab0a0490e15&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="REST API"&gt;32ec205953ea521005707ab0a0490e15&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_91c55ca65377d61005707ab0a0490ea3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Srijan.Mal&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-21 06:54:45&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-707156919</payload_hash>
+        <record_name>IncidentAssignment</record_name>
+        <reverted_from/>
+        <source>cf41a16a5357561005707ab0a0490e4e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-21 06:54:45</sys_created_on>
+        <sys_id>027a50ae5377d61005707ab0a0490e1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1952749883b0000001</sys_recorded_at>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-02-21 06:54:45</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>867a50aeb977d610654ed3bae5730b1e</update_guid>
+        <update_guid_history>867a50aeb977d610654ed3bae5730b1e:-707156919,400a906e5477d6101f1a1fc29c3c5ccb:2019354300,571694e6a177d610ae26ea66ba71c2eb:-1073086557</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-04-24 09:27:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>00a93125318549ee80c22e3e01122cd1</sys_id>
+        <sys_metadata>91c55ca65377d61005707ab0a0490ea3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IncidentAssignment</sys_name>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope_delete display_value="">4eac1604a1bf439aa4baf47d988f5571</sys_scope_delete>
+        <sys_update_name>sys_script_include_91c55ca65377d61005707ab0a0490ea3</sys_update_name>
+        <sys_update_version display_value="sys_script_include_91c55ca65377d61005707ab0a0490ea3">027a50ae5377d61005707ab0a0490e1f</sys_update_version>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-04-24 09:27:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
