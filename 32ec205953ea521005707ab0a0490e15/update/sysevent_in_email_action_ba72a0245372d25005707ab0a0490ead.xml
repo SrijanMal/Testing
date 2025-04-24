@@ -74,9 +74,9 @@ if (subjectParts.length === 3) {
         <sys_mod_count>4</sys_mod_count>
         <sys_name>Inicdent (Catagory - Software)</sys_name>
         <sys_overrides/>
-        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sysevent_in_email_action_ba72a0245372d25005707ab0a0490ead</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2025-02-19 08:04:43</sys_updated_on>

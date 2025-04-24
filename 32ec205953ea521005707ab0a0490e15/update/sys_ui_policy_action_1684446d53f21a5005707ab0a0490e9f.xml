@@ -12,9 +12,9 @@
         <sys_id>1684446d53f21a5005707ab0a0490e9f</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>requested_item.model_number</sys_name>
-        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_ui_policy_action_1684446d53f21a5005707ab0a0490e9f</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2024-12-30 09:44:13</sys_updated_on>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_1040499_ip_looku.UserRoleChecker</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>UserRoleChecker</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var UserRoleChecker = Class.create();
+UserRoleChecker.prototype = {
+    initialize: function() {},
+
+	//Write a Script Include that contains a function to check if a user has a specific role. Use this Script Include in a Business Rule to prevent users without the "itil" role from updating incidents.
+    
+   hasRole: function(userId, roleName) {
+        var gr = new GlideRecord('sys_user_has_role');
+        gr.addQuery('user', userId);
+        gr.addQuery('role', roleName);
+        gr.query();
+        return gr.hasNext();
+    },
+    
+    type: 'UserRoleChecker'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-24 08:49:38</sys_created_on>
+        <sys_id>bb1190ab53bf1e1005707ab0a0490ef5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>UserRoleChecker</sys_name>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sys_script_include_bb1190ab53bf1e1005707ab0a0490ef5</sys_update_name>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-25 09:15:12</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</application>
+        <file_path/>
+        <instance_id>4ffbec40db4ab514199b1729139619aa</instance_id>
+        <instance_name>dev188595</instance_name>
+        <name>sys_script_include_bb1190ab53bf1e1005707ab0a0490ef5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_1040499_ip_looku.UserRoleChecker&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;UserRoleChecker&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var UserRoleChecker = Class.create();
+UserRoleChecker.prototype = {
+    initialize: function() {},
+
+	//Write a Script Include that contains a function to check if a user has a specific role. Use this Script Include in a Business Rule to prevent users without the "itil" role from updating incidents.
+    
+   hasRole: function(userId, roleName) {
+        var gr = new GlideRecord('sys_user_has_role');
+        gr.addQuery('user', userId);
+        gr.addQuery('role', roleName);
+        gr.query();
+        return gr.hasNext();
+    },
+    
+    type: 'UserRoleChecker'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Srijan.Mal&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-24 08:49:38&lt;/sys_created_on&gt;&lt;sys_id&gt;bb1190ab53bf1e1005707ab0a0490ef5&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;UserRoleChecker&lt;/sys_name&gt;&lt;sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku"&gt;32ec205953ea521005707ab0a0490e15&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Proof of Concept with Senario Base Scripting"&gt;32ec205953ea521005707ab0a0490e15&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_bb1190ab53bf1e1005707ab0a0490ef5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Srijan.Mal&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-25 09:15:12&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1947554174</payload_hash>
+        <record_name>UserRoleChecker</record_name>
+        <reverted_from/>
+        <source>cf41a16a5357561005707ab0a0490e4e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-25 09:15:12</sys_created_on>
+        <sys_id>277d693c53282a9005707ab0a0490e99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195cc959fc80000001</sys_recorded_at>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-25 09:15:12</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>eb7dad7c3fe42a901bc93e31fe47aebd</update_guid>
+        <update_guid_history>eb7dad7c3fe42a901bc93e31fe47aebd:1947554174,160b41ffabbb9e10a179db97bb24632c:143955627,fce4a0e33f735e1037aca8dc3d916328:906591455,bee1d0af8abf1e10b4ed900b5ba8a56e:-1337468788,228158e376ff1e10f12f972de05dd943:-1082622839</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-04-24 09:19:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>014e8838ca87436c84597c97f13c4ac1</sys_id>
+        <sys_metadata>bb1190ab53bf1e1005707ab0a0490ef5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UserRoleChecker</sys_name>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope_delete display_value="">4eac1604a1bf439aa4baf47d988f5571</sys_scope_delete>
+        <sys_update_name>sys_script_include_bb1190ab53bf1e1005707ab0a0490ef5</sys_update_name>
+        <sys_update_version display_value="sys_script_include_bb1190ab53bf1e1005707ab0a0490ef5">277d693c53282a9005707ab0a0490e99</sys_update_version>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-04-24 09:19:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

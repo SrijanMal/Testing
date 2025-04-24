@@ -35,9 +35,9 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Test</sys_name>
         <sys_overrides/>
-        <sys_package display_value="REST API" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
-        <sys_scope display_value="REST API">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_667990a953d7d21005707ab0a0490e28</sys_update_name>
         <sys_updated_by>Srijan.Mal</sys_updated_by>
         <sys_updated_on>2025-01-24 07:45:06</sys_updated_on>
@@ -51,9 +51,7 @@
     <sys_hub_action_output action="delete_multiple" query="model=667990a953d7d21005707ab0a0490e28"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=667990a953d7d21005707ab0a0490e28"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=667990a953d7d21005707ab0a0490e28"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_667990a953d7d21005707ab0a0490e28"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_667990a953d7d21005707ab0a0490e28"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_667990a953d7d21005707ab0a0490e28"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_667990a953d7d21005707ab0a0490e28"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=667990a953d7d21005707ab0a0490e28"/>
 </record_update>

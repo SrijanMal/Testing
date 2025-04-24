@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="incident">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Prevent Update Without ITIL Role</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    var UserRoleChecker = new UserRoleChecker();
+    if (!UserRoleChecker.hasRole(gs.getUserID(), 'itil')) {
+        gs.addErrorMessage('You do not have permission to update incidents.');
+        current.setAbortAction(true);
+    }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-02-24 08:51:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9ca1d86b53bf1e1005707ab0a0490ef3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Prevent Update Without ITIL Role</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sys_script_9ca1d86b53bf1e1005707ab0a0490ef3</sys_update_name>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-19 09:22:28</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=9ca1d86b53bf1e1005707ab0a0490ef3"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</application>
+        <file_path/>
+        <instance_id>4ffbec40db4ab514199b1729139619aa</instance_id>
+        <instance_name>dev188595</instance_name>
+        <name>sys_script_9ca1d86b53bf1e1005707ab0a0490ef3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="incident"&gt;active=true^EQ&lt;item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Prevent Update Without ITIL Role&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+    var UserRoleChecker = new UserRoleChecker();
+    if (!UserRoleChecker.hasRole(gs.getUserID(), 'itil')) {
+        gs.addErrorMessage('You do not have permission to update incidents.');
+        current.setAbortAction(true);
+    }
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Srijan.Mal&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-24 08:51:08&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9ca1d86b53bf1e1005707ab0a0490ef3&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Prevent Update Without ITIL Role&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku"&gt;32ec205953ea521005707ab0a0490e15&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Proof of Concept with Senario Base Scripting"&gt;32ec205953ea521005707ab0a0490e15&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_9ca1d86b53bf1e1005707ab0a0490ef3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Srijan.Mal&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-19 09:22:28&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=9ca1d86b53bf1e1005707ab0a0490ef3"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1722456308</payload_hash>
+        <record_name>Prevent Update Without ITIL Role</record_name>
+        <reverted_from/>
+        <source>cf41a16a5357561005707ab0a0490e4e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-03-19 09:22:28</sys_created_on>
+        <sys_id>2795363a53586e5005707ab0a0490e0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195adb61dd80000001</sys_recorded_at>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-03-19 09:22:28</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>6b95363aca586e505a237603bb75ed09</update_guid>
+        <update_guid_history>6b95363aca586e505a237603bb75ed09:-1722456308,ddaa413359fb9e10c15fab0979932656:-1472380581,ee5a41b305fb9e109ebb527e2f3b8a4b:-926808772,9e4a41b339fb9e10cb996ef8e278fd62:623156879,9ee4a0e3e4735e106d06abdee8817ad3:144855586,9f13282342735e1036455aa2d720c36a:-804300939,54e158e398ff1e10c2b13d3ec6ac1b49:451731633</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Srijan.Mal</sys_created_by>
+        <sys_created_on>2025-04-24 09:19:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>ca6f605a14dc4cd1a318acc0702d4fd9</sys_id>
+        <sys_metadata>9ca1d86b53bf1e1005707ab0a0490ef3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Prevent Update Without ITIL Role</sys_name>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_parent display_value="Incident">3a248d7b8d820210d0ad51af41866369</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_scope_delete display_value="">4eac1604a1bf439aa4baf47d988f5571</sys_scope_delete>
+        <sys_update_name>sys_script_9ca1d86b53bf1e1005707ab0a0490ef3</sys_update_name>
+        <sys_update_version display_value="sys_script_9ca1d86b53bf1e1005707ab0a0490ef3">2795363a53586e5005707ab0a0490e0a</sys_update_version>
+        <sys_updated_by>Srijan.Mal</sys_updated_by>
+        <sys_updated_on>2025-04-24 09:19:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
