@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>smile-o</glyph>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">f76acac18335e610b89651c6feaad3b2</sp_column>
+        <sp_widget display_value="New Widget">336a0e018335e610b89651c6feaad36a</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 09:18:37</sys_created_on>
+        <sys_id>7b6acac18335e610b89651c6feaad3b5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>New Widget Instance</sys_name>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sp_instance_7b6acac18335e610b89651c6feaad3b5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-28 08:53:21</sys_updated_on>
+        <title>New Widget Instance</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=7b6acac18335e610b89651c6feaad3b5"/>
+</record_update>

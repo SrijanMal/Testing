@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.incident-list {
+  font-family: Arial, sans-serif;
+}
+.incident-list ul {
+  list-style: none;
+  padding: 0;
+}
+.incident-list li {
+  margin-bottom: 10px;
+}
+.label {
+  display: block;
+  font-size: 0.9em;
+  color: #666;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>new_widget_1</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>New Widget_1</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  data.incidents = [];
+
+  var gr = new GlideRecord('incident');
+  gr.addQuery('active', true); // Optional: filter for active incidents
+  gr.orderByDesc('sys_created_on'); // Optional: sort by newest
+  gr.setLimit(5); // Optional: limit number of records
+  gr.query();
+
+  while (gr.next()) {
+    data.incidents.push({
+      number: gr.getValue('number'),
+      short_description: gr.getValue('short_description'),
+      priority: gr.getValue('priority'),
+      state: gr.getDisplayValue('state')
+    });
+  }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 09:18:56</sys_created_on>
+        <sys_id>e08a42418335e610b89651c6feaad3be</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>New Widget_1</sys_name>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sp_widget_e08a42418335e610b89651c6feaad3be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 09:40:06</sys_updated_on>
+        <template><![CDATA[<div class="incident-list">
+  <h3>Recent Incidents</h3>
+  <ul>
+    <li ng-repeat="incident in data.incidents">
+      <strong>{{incident.number}}</strong>: {{incident.short_description}}  
+      <span class="label">Priority: {{incident.priority}}, State: {{incident.state}}</span>
+    </li>
+  </ul>
+</div>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e08a42418335e610b89651c6feaad3be</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 09:18:56</sys_created_on>
+        <sys_id>ac8a42418335e610b89651c6feaad3c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 09:18:56</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
