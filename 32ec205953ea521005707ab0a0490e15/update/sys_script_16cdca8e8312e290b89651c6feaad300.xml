@@ -3,10 +3,10 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>false</active>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -15,13 +15,12 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="incident">problem_idVALCHANGES^problem_idISNOTEMPTY^EQ<item endquery="false" field="problem_id" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
-            <item endquery="false" field="problem_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        <filter_condition table="incident">problem_idISNOTEMPTY^EQ<item endquery="false" field="problem_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>associateIncidentCount</name>
+        <name>UpdateAssociateIncidentCount</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,38 +29,39 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
-
-    // use case :- create a field in problem table name as associate incident count. once an incident will attached to a problem record, the count will increase.
-
-    var gr = new GlideRecord('problem');
-    gr.addQuery('sys_id', current.problem_id);
-    gr.query();
-
-    if (gr.next()) {
-        gr.x_1040499_ip_looku_associate_incident_count = gr.x_1040499_ip_looku_associate_incident_count + 1;
-
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    if (current.problem_id && current.problem_id != previous.problem_id) {
+        var problemGR = new GlideRecord('problem');
+        if (problemGR.get(current.problem_id)) {
+            var incidentCount = new GlideAggregate('incident');
+            incidentCount.addAggregate('COUNT');
+            incidentCount.addQuery('problem_id', current.problem_id);
+            incidentCount.query();
+            if (incidentCount.next()) {
+                problemGR.x_1040499_ip_looku_associate_incident_count = incidentCount.getAggregate('COUNT');
+                problemGR.update();
+            }
+        }
     }
-    gr.update();
-
-})(current, previous);]]></script>
+})();
+]]></script>
         <sys_class_name>sys_script</sys_class_name>
-        <sys_created_by>Srijan.Mal</sys_created_by>
-        <sys_created_on>2025-02-20 07:56:09</sys_created_on>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-24 08:40:28</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>05ad5fca537b561005707ab0a0490ec6</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>associateIncidentCount</sys_name>
+        <sys_id>16cdca8e8312e290b89651c6feaad300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UpdateAssociateIncidentCount</sys_name>
         <sys_overrides/>
         <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name>sys_script_05ad5fca537b561005707ab0a0490ec6</sys_update_name>
-        <sys_updated_by>Srijan.Mal</sys_updated_by>
-        <sys_updated_on>2025-02-20 09:27:20</sys_updated_on>
+        <sys_update_name>sys_script_16cdca8e8312e290b89651c6feaad300</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-24 08:40:28</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=05ad5fca537b561005707ab0a0490ec6"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=16cdca8e8312e290b89651c6feaad300"/>
 </record_update>
