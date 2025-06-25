@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition table="sys_email">subjectLIKEissue^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="issue"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <from/>
+        <name>Create Incident via Email</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(email, email_action, event) {
+    var body = email.body_text || email.body_html || "";
+    var subject = email.subject || "";
+    var content = (subject + " " + body).toLowerCase();
+
+    // Set short description and description
+    incident.setValue("short_description", subject);
+    incident.setValue("description", body);
+
+    // Set priority
+    if (content.includes("urgent") || content.includes("critical")) {
+        incident.setValue("impact", "1"); // High
+        incident.setValue("urgency", "1"); // High
+    } else if (content.includes("high")) {
+        incident.setValue("impact", "2"); // Medium
+        incident.setValue("urgency", "1"); // High
+    } else if (content.includes("medium")) {
+        incident.setValue("impact", "2"); // Medium
+        incident.setValue("urgency", "2"); // Medium
+    } else if (content.includes("low")) {
+        incident.setValue("impact", "3"); // Low
+        incident.setValue("urgency", "3"); // Low
+    }
+
+
+    // Set category (ensure these values exist in your dictionary)
+
+    if (content.includes("vpn")) {
+        incident.setValue("category", "network");
+    } else if (content.includes("email")) {
+        incident.setValue("category", "email");
+    } else if (content.includes("hardware") || content.includes("laptop")) {
+        incident.setValue("category", "hardware");
+    } else {
+        incident.setValue("category", "inquiry");
+    }
+
+
+    // Set caller
+    if (email.origemail) {
+        var user = new GlideRecord("sys_user");
+        user.addQuery("email", email.origemail);
+        user.query();
+        if (user.next()) {
+            incident.setValue("caller_id", user.getUniqueValue());
+        }
+    }
+
+    // Set assignment group
+    var groupName = "";
+    if (content.includes("vpn") || content.includes("network")) {
+        groupName = "Network Support";
+    } else if (content.includes("email")) {
+        groupName = "Email Support";
+    } else if (content.includes("hardware") || content.includes("laptop")) {
+        groupName = "Hardware Support";
+    }
+
+    if (groupName) {
+        var group = new GlideRecord("sys_user_group");
+        group.addQuery("name", groupName);
+        group.query();
+        if (group.next()) {
+            incident.setValue("assignment_group", group.getUniqueValue());
+        }
+    }
+
+})(email, email_action, event);]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 07:41:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d3594fd2835a6210b89651c6feaad377</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Create Incident via Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sysevent_in_email_action_d3594fd2835a6210b89651c6feaad377</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 08:48:11</sys_updated_on>
+        <table>incident</table>
+        <template/>
+        <type>new</type>
+    </sysevent_in_email_action>
+</record_update>
