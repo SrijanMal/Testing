@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description>Triggered when a user's password is about to expire.</description>
+        <event_name>x_1040499_ip_looku.custom.password.expir</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix>custom.password.expiry.notification</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-26 08:53:17</sys_created_on>
+        <sys_id>d92464b28316e210b89651c6feaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1040499_ip_looku.custom.password.expir</sys_name>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name>sysevent_register_d92464b28316e210b89651c6feaad34f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 08:53:17</sys_updated_on>
+        <table>sys_user</table>
+    </sysevent_register>
+</record_update>
