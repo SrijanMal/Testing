@@ -3,10 +3,10 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -15,12 +15,10 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="incident">state=2^EQ<item display_value="In Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter_condition>
+        <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Increment Reopen Count</name>
+        <name>Fetch incidents created in the last 7 da</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,39 +28,35 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
-	// var previouslyClosed = [6, 7].includes(previous.state); // 6 = Resolved, 7 = Closed (adjust as needed)
 
-    // if (current.state.changesTo(2) && previouslyClosed) {
-    //     current.reopen_count = (current.reopen_count || 0) + 1;
-    // }
+    // Add your code here
+    var gr = new GlideRecord('incident');
+    gr.addQuery('sys_created_on', '>=', gs.daysAgoStart(7));
 
-    // Check if the incident was previously resolved or closed
-    var closeState = [6, 7];
-    var openState = [1, 2];
-    
-    if (closeState.indexOf(previous.state)!== -1 && openState.indexOf(current.state) !== -1) {
-		current.reopen_count = (current.reopen_count || 0) + 1;
-
+    gr.setLimit(5);
+    gr.query();
+    while (gr.next()) {
+        gs.info('Incident: ' + gr.number);
     }
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-27 08:34:31</sys_created_on>
+        <sys_created_on>2025-07-30 09:40:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>c528e143835e2610b89651c6feaad35d</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Increment Reopen Count</sys_name>
+        <sys_id>36e43f25838be210b89651c6feaad3d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Fetch incidents created in the last 7 da</sys_name>
         <sys_overrides/>
         <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name>sys_script_c528e143835e2610b89651c6feaad35d</sys_update_name>
+        <sys_update_name>sys_script_36e43f25838be210b89651c6feaad3d0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-27 10:15:56</sys_updated_on>
+        <sys_updated_on>2025-07-30 09:40:53</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=c528e143835e2610b89651c6feaad35d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=36e43f25838be210b89651c6feaad3d0"/>
 </record_update>
