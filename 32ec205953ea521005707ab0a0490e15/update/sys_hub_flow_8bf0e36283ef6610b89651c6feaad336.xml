@@ -34,214 +34,46 @@
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:30</sys_created_on>
+        <sys_created_on>2025-08-27 07:17:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>ec399fae836f6610b89651c6feaad3a6</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_id>8bf0e36283ef6610b89651c6feaad336</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Copy of Create Incident from External Emails</sys_name>
         <sys_overrides/>
         <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
         <sys_policy/>
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name>sys_hub_flow_ec399fae836f6610b89651c6feaad3a6</sys_update_name>
+        <sys_update_name>sys_hub_flow_8bf0e36283ef6610b89651c6feaad336</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:43:59</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:35</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record display_value="Created 2025-08-26 23:43:50">614993ee836f6610b89651c6feaad314</version_record>
+        <version_record display_value="Created 2025-08-27 00:17:35">f7f0e36283ef6610b89651c6feaad3fb</version_record>
     </sys_hub_flow>
-    <sys_translated_text action="delete_multiple" query="documentkey=ec399fae836f6610b89651c6feaad3a6"/>
-    <sys_variable_value action="delete_multiple" query="document_key=ec399fae836f6610b89651c6feaad3a6"/>
-    <sys_hub_flow_stage action="delete_multiple" query="flow=ec399fae836f6610b89651c6feaad3a6"/>
-    <sys_flow_cat_variable_model action="delete_multiple" query="id=ec399fae836f6610b89651c6feaad3a6^sys_idNOT IN28399fae836f6610b89651c6feaad3a7"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=8bf0e36283ef6610b89651c6feaad336"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8bf0e36283ef6610b89651c6feaad336"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8bf0e36283ef6610b89651c6feaad336"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8bf0e36283ef6610b89651c6feaad336^sys_idNOT IN4ff0e36283ef6610b89651c6feaad343"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
-        <id>ec399fae836f6610b89651c6feaad3a6</id>
+        <id>8bf0e36283ef6610b89651c6feaad336</id>
         <name>Copy of Create Incident from External Emails</name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:30</sys_created_on>
-        <sys_id>28399fae836f6610b89651c6feaad3a7</sys_id>
+        <sys_created_on>2025-08-27 07:17:32</sys_created_on>
+        <sys_id>4ff0e36283ef6610b89651c6feaad343</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:43:30</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:32</sys_updated_on>
     </sys_flow_cat_variable_model>
-    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=28399fae836f6610b89651c6feaad3a7"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=ec399fae836f6610b89651c6feaad3a6^sys_idNOT IN34399fae836f6610b89651c6feaad3e7,74399fae836f6610b89651c6feaad3ea,7439dfae836f6610b89651c6feaad322,78399fae836f6610b89651c6feaad3ae,b0399fae836f6610b89651c6feaad3e4,f4399fae836f6610b89651c6feaad3ed,f439dfae836f6610b89651c6feaad325"/>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4ff0e36283ef6610b89651c6feaad343"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8bf0e36283ef6610b89651c6feaad336^sys_idNOT IN13f0e36283ef6610b89651c6feaad35b,17f0e36283ef6610b89651c6feaad355,1bf0e36283ef6610b89651c6feaad34f,57f0e36283ef6610b89651c6feaad36a,93f0e36283ef6610b89651c6feaad358,97f0e36283ef6610b89651c6feaad34b,97f0e36283ef6610b89651c6feaad352"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>body_text</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">string_full_utf8</internal_type>
-        <label>Body Text</label>
-        <mandatory>false</mandatory>
-        <max_length>255</max_length>
-        <model display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</model>
-        <model_id>ec399fae836f6610b89651c6feaad3a6</model_id>
-        <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
-        <next_element/>
-        <order>100</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>34399fae836f6610b89651c6feaad3e7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:07</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=34399fae836f6610b89651c6feaad3e7"/>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>subject</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">string_full_utf8</internal_type>
-        <label>Subject</label>
-        <mandatory>false</mandatory>
-        <max_length>255</max_length>
-        <model display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</model>
-        <model_id>ec399fae836f6610b89651c6feaad3a6</model_id>
-        <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
-        <next_element/>
-        <order>100</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>74399fae836f6610b89651c6feaad3ea</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:07</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=74399fae836f6610b89651c6feaad3ea"/>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -277,10 +109,10 @@
         <label>Target Record</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</model>
-        <model_id>ec399fae836f6610b89651c6feaad3a6</model_id>
+        <model display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</model>
+        <model_id>8bf0e36283ef6610b89651c6feaad336</model_id>
         <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
         <next_element/>
         <order>100</order>
         <primary>false</primary>
@@ -298,16 +130,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>7439dfae836f6610b89651c6feaad322</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>13f0e36283ef6610b89651c6feaad35b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:07</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -320,12 +152,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7439dfae836f6610b89651c6feaad322"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=13f0e36283ef6610b89651c6feaad35b"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -349,7 +181,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>inbound_email</element>
+        <element>subject</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -357,44 +189,41 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
-        <label>Inbound Email</label>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Subject</label>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
-        <model display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</model>
-        <model_id>ec399fae836f6610b89651c6feaad3a6</model_id>
+        <max_length>255</max_length>
+        <model display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</model>
+        <model_id>8bf0e36283ef6610b89651c6feaad336</model_id>
         <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
         <next_element/>
         <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sys_email">sys_email</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual>type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ</reference_qual>
-        <reference_qual_condition table="sys_email">type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ<item display_value="received" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="received"/>
-            <item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Last 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference_qual/>
+        <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:30</sys_created_on>
-        <sys_id>78399fae836f6610b89651c6feaad3ae</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2025-08-27 07:17:32</sys_created_on>
+        <sys_id>17f0e36283ef6610b89651c6feaad355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:07</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:32</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -407,12 +236,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=78399fae836f6610b89651c6feaad3ae"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=17f0e36283ef6610b89651c6feaad355"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -448,10 +277,10 @@
         <label>Target Table</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</model>
-        <model_id>ec399fae836f6610b89651c6feaad3a6</model_id>
+        <model display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</model>
+        <model_id>8bf0e36283ef6610b89651c6feaad336</model_id>
         <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
         <next_element/>
         <order>100</order>
         <primary>false</primary>
@@ -469,16 +298,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:30</sys_created_on>
-        <sys_id>b0399fae836f6610b89651c6feaad3e4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2025-08-27 07:17:32</sys_created_on>
+        <sys_id>1bf0e36283ef6610b89651c6feaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:07</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:32</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -491,96 +320,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b0399fae836f6610b89651c6feaad3e4"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1bf0e36283ef6610b89651c6feaad34f"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference,uiTypeLabel=Reference</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>user</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
-        <label>User</label>
-        <mandatory>false</mandatory>
-        <max_length>32</max_length>
-        <model display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</model>
-        <model_id>ec399fae836f6610b89651c6feaad3a6</model_id>
-        <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
-        <next_element/>
-        <order>100</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference display_value="" name="sys_user">sys_user</reference>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>f4399fae836f6610b89651c6feaad3ed</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:07</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f4399fae836f6610b89651c6feaad3ed"/>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -616,10 +361,10 @@
         <label>From address</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</model>
-        <model_id>ec399fae836f6610b89651c6feaad3a6</model_id>
+        <model display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</model>
+        <model_id>8bf0e36283ef6610b89651c6feaad336</model_id>
         <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
         <next_element/>
         <order>100</order>
         <primary>false</primary>
@@ -637,16 +382,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>f439dfae836f6610b89651c6feaad325</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>57f0e36283ef6610b89651c6feaad36a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:08</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -659,80 +404,287 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f439dfae836f6610b89651c6feaad325"/>
-    <sys_hub_flow_output action="delete_multiple" query="model=ec399fae836f6610b89651c6feaad3a6"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ec399fae836f6610b89651c6feaad3a6"/>
-    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ec399fae836f6610b89651c6feaad3a6^sys_idNOT IN3039dfae836f6610b89651c6feaad340"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=57f0e36283ef6610b89651c6feaad36a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>User</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</model>
+        <model_id>8bf0e36283ef6610b89651c6feaad336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>93f0e36283ef6610b89651c6feaad358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=93f0e36283ef6610b89651c6feaad358"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>inbound_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Inbound Email</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</model>
+        <model_id>8bf0e36283ef6610b89651c6feaad336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_email">sys_email</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual>type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ</reference_qual>
+        <reference_qual_condition table="sys_email">type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ<item display_value="received" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="received"/>
+            <item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Last 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 07:17:32</sys_created_on>
+        <sys_id>97f0e36283ef6610b89651c6feaad34b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 07:17:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=97f0e36283ef6610b89651c6feaad34b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body_text</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Body Text</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</model>
+        <model_id>8bf0e36283ef6610b89651c6feaad336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 07:17:32</sys_created_on>
+        <sys_id>97f0e36283ef6610b89651c6feaad352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 07:17:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=97f0e36283ef6610b89651c6feaad352"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8bf0e36283ef6610b89651c6feaad336"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8bf0e36283ef6610b89651c6feaad336"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8bf0e36283ef6610b89651c6feaad336^sys_idNOT INabf0e36283ef6610b89651c6feaad389"/>
     <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</flow>
+        <flow display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</flow>
         <generation_source/>
         <name>Inbound Email</name>
         <published_version/>
         <remote_sys_id/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>3039dfae836f6610b89651c6feaad340</sys_id>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>abf0e36283ef6610b89651c6feaad389</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:43:31</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
         <trigger_definition display_value="Inbound Email">6f0180400b320300f4eb8bf637673ad4</trigger_definition>
         <trigger_inputs>H4sIAAAAAAAA/9WWXU/bMBSG/4qV6w4lTWmhV5u2Ie1mSIC2C8YixzlpPDl2ZjstHeK/79hJaPpBRwfS2A3CHz3nPe95jtvru0DQFEQwDT6WlAvClMy45UqaYBBwaUFLKq6WFeCNtbOSyoxapZfBNKfCwCDItSqvoKwEtfCwqXQGOphGYTgI5lTUcLk0nzIMhiEkLV1YcImTteD+Jh5pYLziIK35VodhnBnNf1BZUjEZv525jx0xVX63KK85x/vA55BhCFZwgWsZTK9vBkFFNSazTsrdxhF3aqKTMArj0YRN4mgYh2E+gpRGo+ExPZ2M43yCAff49HghdodzfUvg1oLMUHDn17atGmh2LsVqo8C2YMz3DzGJVeRnTQXPl2RRcFYQr8QQY6m2ZKlqTXKhFke+bbeG/0JNo9Dl15ADOsGcSLM0if9g0NtPMm6wo8uucO+s4gzOK5e7aaSlqYDmX6ZEXcrPjSG4ziCntbBf2obiTm0wKFSubFdHB89loRYXXdYzLr1H7aFQjIqHFbVW87S2YHwzOxuStMa2uk8F82Fw72tInC2dkDZl0qjGC21pZxxES6Rhmlf2HbMIUZvvfrAakXPfua25cMuZPzhsKIZ7hkK1qeYr41q5PSsPY3wcpnGIhO9mfAI9xrtCN8TYzXr7hTwD5asCSKW50twuyQy9lw5pi7vY6RmmImru/uCOJlymqpZZw3h3wWywvU72I0C/Opbn3PAmuz9+EsR/QPbSqgq9VQyM4XK2DW+qlAAqD4Y33gOvwaSrdzABd416i1dARy9ANHI8OnmU6LxP9LYPT9BqNy3q1/4M3r8WjnBdw6CTBIYovOiZd081WXBb+BUuwNg33jbi8/8D1J3W1e6H9ba1h69/Fi6gQosvgKGNxOO/NQ3eksSjcehAjPYMBH4Pz8AmjeEv+qinpxGOwOjkOI5iNwKQTlhI8efMOGPxKD3ujcCu8nfrszvM6Ff5zKfexyUq93zrRg81RjGOtmYr9LnEX3c4rHjHKfcP/hr8J//nO/+3KN/8Bl0mpLyuCwAA</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>email</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ec399fae836f6610b89651c6feaad3a6^sys_idNOT IN3039dfae836f6610b89651c6feaad33d,7c39dfae836f6610b89651c6feaad33e,b839dfae836f6610b89651c6feaad33b,f039dfae836f6610b89651c6feaad33e"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
-        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</flow>
-        <generation_source/>
-        <order>3</order>
-        <parent_ui_id>1bb1cba5-1ad0-4f92-82de-29b5de88a20a</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>3039dfae836f6610b89651c6feaad33d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:08</sys_updated_on>
-        <ui_id>374d7114-3cda-4e7e-a9d2-3e166c44e704</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/9VXUVPjNhD+Kxo/0oyxCXA0fcrcHT0e7pgmmesDoR5ZlhO1suST5EDI5L93JdlOSAINgbZ3Dwyj1Wr3293vk5ybRcCyoBdc5KdRhOOzi3dR1O1G0fl5l+A4TbvnJI3S0zToBAIXFDwNTjmF5Qzzyq71XCfYGEymBRUGNjKmS47nX+v9/voemTKeKSqC3s1tJyixgpiGqqC32Ngy85ImHKeUQ4iRTYm+2PydveE+OrwN3yZolonwoaXKLJaoE9B7Q0VGIVWOuaadoMAiw0aqeWtRFGfXgq8MUwYl9oLAOt9r9gDhLyLrl1Moi1C/1y6Tuk/eTKaSEXpdGiaFt3igflPyqhBffAG2wzTHFTdNh8FSaYhHS4vZgqgR5cOpvBs0CS+ZcOXVm1wSzNsVTFCxtDJU21lQTu3AkgKXJROTpFRyxtxhwFKEEw6LMOfyDpJqNhEhJhZ4CC3C4SXYPzjzV6yYreIzhIHDAIhxmHbim65lpVxXZgnhlXYbCgvtYwVL16vkW2VR+qrr+hLfInDQRLHS9OHAjNalLDt7MfosWlGCSJExm1Ov0brGCORm2biCENlicSVSWYkMfSww40kcMr9OqF2H3ne53JbAq2IdJpn36zXt24+dh3c1qRbPI1stnvjNxANw/yf5GFV9f+r5Jz34gneLojE60qyGBqtnnYPjo7E4OuoTQrVGFtlx30FFFiqqNFSHzJSiPEucRaZ/UmJCNHQBUAGqRoqaSgmEkVNWiGzEa8sVJKoihX9MI5nnmhqUztFPMWICfVRKKvQJaMNtiiH1DXJgZqAP9x5IN22NaiKgqgRgpQKo9sw4CMcBwjlIpYFnj9N7XJSc9gCNQnoqlYFmE+RV2TiGMM3JhKqQVAqGb0LnaKfl6oKsv9hYdWVtFGe0fwP6rWIABP1qRz2gBLSBgEQSRPFbRdUcmqIBLfQaNYDc2QC7QXg0loV/bGUejvqD0fD3q9EnYJsZBzbpcbBctvceefeszs9WktY2tBfH2sW3fX0dfAldMsqzR+/2HuCaw54j6fwpvPUdlNscGw/4yQ//gH+XNxAAyhLfbyZAmO5pA6Cvuppa3kbPv08/b/DAjX/tK9TasCbb7MXISPRw+EPq5trwdw+QzcEhIEIjj3IH8OYJbcLX1O2+GXW7Jy+jLhDnZtGib7u2o8HNZ7IdXeP/YP3xpr+9t9Y+DZa3LfXfH5YzfmnOE5tzQ5vdF4lznVl+58MTBHvjj/AnxNb5N9U9haN1vsSLNblj2YSaVfbGK5PmDvO/du3X7Go15Mp79Qf96bPaO49XOgMNJPDCwqjWv+hj+J7cvh7ijjcfdjtcCUMnrnn7QmxOfsb3aNBi3Am8viJYm6Pm9OkbfmL/F89b0/id6mn6/0P8gj2Uwrd/A2TPYGtnEQAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3039dfae836f6610b89651c6feaad33d"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
-        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</flow>
-        <generation_source/>
-        <order>8</order>
-        <parent_ui_id>25629989-a7e3-4c66-9040-861f20160f7b</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>7c39dfae836f6610b89651c6feaad33e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:08</sys_updated_on>
-        <ui_id>d7c344f5-f63a-4c95-ba7f-d734ef42ae9c</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4XOTiDZjhPnVmDosMNaYB16aVpDluhEmPwxWU6bBfnvo2QnbdMWK4oBw4b5JpJ6fI+kxestUZLMScKATlKWiIhFUUhpOItZnkQ5C2XEAWISkIqXgJGW5xoyfwjImuvOGVUllITKokmqttF8czV4Pj14xEppaaAi8+ubgDTcIIYFQ+bbI5fdNJBpnoNGgK8u38l5n++tXJ9cfoW7y3Jsq410hGhA4N5CJQHzFVy3EJCSV5Lb2mzI3JoODQa4vKj05hCxUihzToiLvW/VD0SfURdXAEoT0PsOx2yoVG8Wq1oJuGisqqve4okNzlp3ZXXei3A1hoJ32u5rjJauRTxoHGVHYmBUXK7quy/7hGeq8uoGp64F14cTt9aovLPQun6AhhKBspI3jaqWWWPqtfKXkUs5Xmo8jAtd32HSVi2rMReO+BgrxMdnaP/gzVfcKKfiM8Lg5Z1Xn33vXN5ex8A460VjQCuMauwpwq1hILcL9kMqgaavNp7lD432c9k+GtB2VRvryHp4pLroKI3kdkuLlEfpdDbisYxGcZGEo3Qip6Oc5ZLKOAERxuNnt3e72/diPUURdWWxdpkbxh4GSq70LW9d/XwPlqbumiHFYv97Lch8QS7BrHFoTrDY3xYkWPRqvUsm4UQKAYLyGWXJlFIehiGnxTSlVNLEh7ebNlPyjfHIlWsNxt14icxHLLg9YjFhUTKhkRAJY2E4FZTNIkiTSToTcTEdWPg59+GODw6yOSb3a5jd84fnf8f/+Y6/c6FAiRIsnPSTErz5bdkDnCnQsn3hsdlvlCFBth4SDFuF/a6twhLqvz+zW3qef9lqebTlX1kyNz8Baw2FowsJAAA=</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7c39dfae836f6610b89651c6feaad33e"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8bf0e36283ef6610b89651c6feaad336^sys_idNOT IN5bf0e36283ef6610b89651c6feaad384,5ff0e36283ef6610b89651c6feaad387,9bf0e36283ef6610b89651c6feaad386,d7f0e36283ef6610b89651c6feaad388"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Extact Email Content">befd52c883632210b89651c6feaad332</action_type>
         <action_type_parent display_value="Extact Email Content">e27b1ac483632210b89651c6feaad396</action_type_parent>
@@ -740,23 +692,23 @@
         <comment/>
         <compiled_snapshot>befd52c883632210b89651c6feaad332</compiled_snapshot>
         <display_text/>
-        <flow display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</flow>
+        <flow display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</flow>
         <generation_source/>
         <order>2</order>
         <parent_ui_id>1bb1cba5-1ad0-4f92-82de-29b5de88a20a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>b839dfae836f6610b89651c6feaad33b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>5bf0e36283ef6610b89651c6feaad384</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:08</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
         <ui_id>0f9a3978-a4d3-4f62-95d7-b1bd0d46ec24</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1TXWvbMBT9K0PPsfF3nLwNtkJhW2Hd+lKKuZKuEw1Zdm05bRby33dlOykJXQljD3vYo47O/ThHOvc7piRbsjmUMo1EnsdZHEVhwPNFloYiKxFAxnHKZsxAhcTECpQuup7/QGFDwjege3ex210bXvdGvvs4UEJ/Iu33xJKqazRs7y4ii7XSskXDlvcPM9ZAS6Mttmy5O7uy2wYLDRw19by1rTIrKr9U0aHwRNIbSt00wrvDnLqVbqlwxvDZopFIc0vQHc5YBUaCrdvtEWkR5I3RL8BaGUvdmCM/d+ontc6DIHDMEkmhwPH2eCwmD0dYrGsl8KaxqjYjYoHrqUbUuq/Ml1GHcx9L6LU9uE9I31E/bNzWbo1pp/J2XT99PQy8UmYQOF3qWoA+nsCSDby32Lln6dW3M3NG5NP526DGiiYWFTQNIUXT1hs1TKGlK3+l6eCXun6i7Tq1Mj4Ip9AnN8G/IvzDAN9Bq5zcz9SGit2470Y99njt3j4NMcmSkHvJPI68JEjRy3mceiIAHkQSkySI2X6wtnjsnajRpMmOYnSUCJ1oVWPf0wobnJTvZ1NkIpinUZQneQyvfLB5dP6ReC23b8bFEQpLX+mywJzS/0ZkLlB0GplJ0msyf5OV6H9W/rGsxDKNyyBNPRDJ3EvEIvE4YuRxKUSGWQiLbPHHWXn4BVd/dclgBgAA</values>
+        <values>H4sIAAAAAAAA/+1Ty27bMBD8lYJnS9Dbsm9F0gAB2gZo2lyCQFiSK5sFRSki6cQ1/O8lLdlJ3CBwgJ6KHjkc7s4Od243RHAyJ1OoeZ6wskyLNEniiJazIo9ZUSMAT9OcTIiCBh0TGxCy0pb+RGZih69AWn+x2Vwq2lrFP3zaUeJwJG23jsWF7iSsb04is6WQvEdF5rd3E9JB71ob7Ml8c3R1qnYJFOWx+DdmMuvO49r0Qi3G8+exxvUebHvuNcUTgo8GFUcnpgapcUIaUBxM268PSI/Ar5R8ApZCGVeNePKjFr9cvzKKIs+s0Q3IcLg9HKvRwgGuz8GAk2KZsf1IZctWMNSDNRxrsNKcPccGwlVnRKuGJwao3L9upW3U18ERciiw/zGHWO1EYOdH9drHQerrZfvwba/yQqidK+OlbBnIwwmM845a4/VsiBXfj2wekD+MRomN61g10HUOqbq+XYldFye6CRfSHcJatg9OnRYLFQLzE4buCyC8cPj5Dr6BXvhxv7gy7rFv90OJe4uXfovyGLMii2mQTdMkyKIcg5KmecAioFHCMcuilGwnRK/1mQStn4xyP1TdWz/mYNtoUDV47J+wXnTmoxO1wtGL7WQMXgLTPEnKrEzhleWdJsdLSlu+fjN0nlAZt5Gnxe4l/X3BO0H7y+CN4l8b6D2JS/4n7l9IXMrztI7yPACWTYOMzbKAIiYB5YwVWMQwK2Z/MXF3vwHIXcq07AYAAA==</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b839dfae836f6610b89651c6feaad33b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5bf0e36283ef6610b89651c6feaad384"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
         <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
@@ -764,25 +716,73 @@
         <comment/>
         <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</flow>
+        <flow display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</flow>
         <generation_source/>
         <order>6</order>
         <parent_ui_id>2c26a19b-88e0-44c5-8646-337bcad94def</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>f039dfae836f6610b89651c6feaad33e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>5ff0e36283ef6610b89651c6feaad387</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:08</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
         <ui_id>4de77838-e3b3-4378-bf67-a776d70b8909</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1W227bMAz9lULPtiFf4th5GzB02MNaYB360rSGLNGJUPkyWU6bBfn3Ub70krZYUAwYBjRvIqnDQ/LIzNWOSEEWJPaBzlI/5qEfhgGlQRL5eRzmfiBCBhARh1SsBIw0LFeQ9QeHbJjqrFFWXAqoDJqEbBvFtpej5+ujh6+lEhoqsri6dkjDNGIY0GSxO3CZbQOZYjkoBPhh852cDfmO5frs8hvcbZZDW62FJUQdAvcGKgGYr2CqBYeUrBLM1HpLFkZ3aNDAxHmltg8Ra4llLgixsfet/IXoCbVxBWBpHAbfwzEbOzWY+bqWHM4bI+tqsPTERmeturI6G4qwPYaCdcpMPUZL1yIeNJayJTEyKi7W9d33KeGprPrqRqeqOVMPJ2aMlnlnoLXzAAUlAmUlaxpZrbJG1xvZX0YupbdSePAKVd9h0lauKo9xS9zDDjHvFO2fe/Ml09JW8Q1h8PK+rz772dm8Qx0j42woGgNarmVjPiHcBkZye2cSqQCavjl4P38cdK/L9olA23WtjSXbwyPVZUdpKHY7WqQsTOeJyyIRulERB246E3M393NBRRQDDyLvxe39/ua9WM9R7mp9m1U1tn0CCXgQMz/N3SQB6kYRn7lJHMVuGM5zzkQa4fA9aaD0CjkKF3FYa/vdz2yl664Z0ZbTc1ySxZJcgN6gyE5wOLdL4iyH7vQuEQczwTlwyhLqx3NKWRAEjBbzlFJB4z683baZFEfG7294XRnURWYf2sAHSibVDcpOgbZIr5H8goMzB+xmfhjPaMh57PtBMOfUT0JI41ma8KiYj+z699KHW574IPQh6T/D7F9+wD6U86GcI5XzzgUHJZZg4GRQnHP0t24COJWgRPvKx2/acGOCbDMmGLec/7e2nB/T/vdvdt3A8z9bdU/+dbyx9K5/A6UAmdObCQAA</values>
+        <values>H4sIAAAAAAAA/+1WW0/bMBT+K8jPSeRcmiZ9m0BMkzaQxsQLhcixT1oL5zLHAbqq/33HSVq6AoJNe0Gibz6XL98557NPr9ZECjIjsQ90kvoxD/0wDCgNksjP4zD3AxEygIg4pGIlYKRhuYKsPzjkjqnOGmXFpYDKoEnItlFsdTl6vjx6+FIqoaEis6trhzRMI4YBTWbrA9dbGSmWg8LQH5bSCwzNqnnW9nU/9+hscNRaWD7UIfBgoBKARAqmWnBIySrBTK1XZGZ0hwYNTJxXarWLWEqsckaIjX1o5S/8bEJtXAFYGYfBtztmY6MGc3HCDLtAZG46PYbyZS05tENPBBSsU+Z43zYEnDdG1tWQ0pc5ZteqK6uzoSVkB7CdC1q6FklAY+u0zMcyiotlff99y/JUVn1LRqeqOVO7EzNGy7wzls+agIISgbKSNY2sFlmj6zvZJyOX0lsoPHiFqu/xo61cVB7jlriHbWXeKdpPevMl09JW8Q1hMHnjkHbVHivWto+1YBOzn51lMlQ21pANbbApXMvGfMIP3MFId+NspS6Api8Ky88fhdSru92TebustbH0e3gkP+8oDcV6TYuUhek0cVkkQjcq4sBNJ2Lq5n4uqIhi4EHkPcnebG7+FetPlPta32ZVjYPYggQ8iJmf5m6SAHWjiE/cJI5iNwynOWcijVAOnjRQeoUcLwbiYJNxAv0UF7rumhFtvr3UczKbkwvQdyi7IxzX7Zw486E7vUvEwURwDpyyhPrxlFIWBAGjxTSlVNC4D8dxZlK8MX5zw+vKoFIye2kHPlAyqW5QiAq0RXqO5GccnDlgN/HDeEJDzmPfD4Ipp34SQhpP0oRHxXRk19+gPtzyxCuiD0m/DrN5+gx+KOdDOW9Uzl+uyddfs+2aPJWgRPvM87bdkVBiFwxkw3N3sCdH59Hl6Bx3pf+/dqUf0/73jjbmUNy7X5h7/41eWJ3XvwGI6XK9JwoAAA==</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f039dfae836f6610b89651c6feaad33e"/>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ec399fae836f6610b89651c6feaad3a6"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ec399fae836f6610b89651c6feaad3a6^sys_idNOT IN7839dfae836f6610b89651c6feaad334,b039dfae836f6610b89651c6feaad337,b839dfae836f6610b89651c6feaad338,f039dfae836f6610b89651c6feaad336"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5ff0e36283ef6610b89651c6feaad387"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>1bb1cba5-1ad0-4f92-82de-29b5de88a20a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>9bf0e36283ef6610b89651c6feaad386</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
+        <ui_id>374d7114-3cda-4e7e-a9d2-3e166c44e704</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX32/bNhD+Vwg+ZoYix0maeU9G0qwB2gazje6h7gSKomxuFKWSlBPH8P++IynJgq0EMeYCKfZgGDwe77778R2pr2vMEzzEV+l5GJL+xdW7MBwMwvDyckBJP44HlzQO4/MY97AkGQNNQ2LBYLkkorRrvdIRMYbQRcakgY2E60KQ1Zdqf9TeowsuEsUkHn791sMFUWDTMIWH652t14ISJGYCVKcVqh2QZlU0y8jtednH9jH02W/kKrFQwh5mj4bJhAGGlAjNejgjMiEmV6tGohhJ7qXYChYcIhxibJUfNX8Cv1eh1UsZREWZ32uWUZUmL05viCETo0pqSlWp0kXOKdM+HwlLSSnMdVvmFe4Lw3Ppj/iw/elclJn87NOBGwN1VUBSagDBChuoRV6FkU4W+cO4RnnLpctJtSlySkSzgqorHpfG4lljJpgtcpSRouByHhUqX3J3GLBkwVzAIkhF/gBONZ/LgFALPIC8kuAW5DdO/IUobqP4BGbgMADiAjok8iXUealcKpcRFaV2G4pI7W3hTc+247UgWm8jh5RH30uL2+ehijjySbNHqOKFGYGJJauC2/RexYuLcNtyNJcJtyh0ixwVaqAIT2YlmEjW6zsZ56VM0PuMcBH1A+7XEbPrwOtuNvtE+k+2jkk8F3VNvOt22F2pqCi4J/vYZaCiYP9oFIQ4fiYSgvO3x8HDWeVT0E2tWuhab1t7WL2ojE9PZvLkZEQh8xpZrKcjBx5Z8KjUEC8yC4bSJHKSPP6bUROgiTOAMpgWSDGorEQEOX4GyFq8ty2HZJnF8Mc1ytNUM4PiFfqlj7hE75XKFfoA3SesiwnzKXNglsAyd4Pkrv4aVf2EygKAFQqg2jMzHMwwIikQroZnj7NHkhWCDQGNQnqRKwPpp8hzu1YMoL7zOVMBLRW0gwmcoq2fiwu8/mZtVZE1VpzQ/sbse8kBCPrdFn/MKFAMQVvlwK0/SqZWkBQNaCHXqAbkzmLiCuHR2L78a8/zZDoaTyd/3k0/QP+ZGbZOT/Fm00xP+u7FOXKxHRnamvZ0aY3P/SF48Ch7BYR6lPlOiFfPoaomWcqZSLoeE7d2Y+cxcfb/fEy8yTkGgJLIV49LILO7VAHokQdc0/3hy7forzt95tqr9a62MqLpPgcIMjl6OpgJr4BTM2ECvtHU4+mAWF/prmV2r/NaWBFgcDQCDM6OQ4B1E2aTyI6c1x8Dtpq1/pPVJ7v6diC2ni6bLoId5LN/qM+zzT6BBwcxuN1sfufmmZ478lfDM4zs/cgRsICjlb/I8zd64Mmcma33WivJzQMR/3TtVx0X1YVy4f2AL5DzF2l72d9SFJgSwWUOxWt/gvThBbw/Q/o9Lz5shLwCS52OT+QRjRswnQirMQJMZ3NXm/YcuWukVZOfH/Gb4M3epHWxOjlY1+yn+HA/HhG+/QvxW/kgpBIAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9bf0e36283ef6610b89651c6feaad386"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>5431688e-71df-4393-b5a2-4fee9664aebd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>d7f0e36283ef6610b89651c6feaad388</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
+        <ui_id>d7c344f5-f63a-4c95-ba7f-d734ef42ae9c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTW/aQBD9K9GeDVrbYDC3KlGqSm0iNVUuJbHGu2NYdf3R9ZqEIv57Z21DKEmUtOolVbntfO17b4Ydf90wJdmMRT7ycexHIvTDMOA8mI78NApTP5AhII6YxwrIkSItpBqT9uCxFejGGVUhlMTCkkmqutKwvu49Hx48Yqm0NFiw2dcbj1VgqIZFw2abI9drEWlIUVPoFwfpGYR2XT1p+3iYe3LROUojHR7uMby3WEgkIBnoGj2WQyHBlmbNZtY0ZDAI8rLQ633EUhHLGWMu9r5WP+jaKXdxGRIzgZ1vf0x6oTpzdgYWrqiysI3pQ8WyVALrThOJGTTanh7auoDLyqqy6FJamn12qZu8uOgkYfsCu76QpakJBFaOp0Pe08iuluXd5x3Kc1W0kvROXQrQ+xNYa1TaWIdnw1BjToWSHKpKFYukMuVKtcmEJR8uNB2GmS7v6NJaLYohCAd8SLLC8JzsZ635GoxyLD5RGUreeqxe16ca6vqBC4mYfG8cko5ZzyHpZHApwqjKvqMLVtjD3Xq7UZfI42cHy08fBqmd7vpgzOtlaayD35Yn8POG81BuNjyLIYwn0wGMZDgYZVEwiMdyMkj9VHI5ilAEo+Gj7O329k9r/VpFlIUlNRM32F0ZzEHpWxKNFG27sjBlU/VXzHd/0jmbzdkVmhWN0QnJ/23OvHnHtnXJKBhLIVBwmHI/mnAOQRAAzyYx55JHbTi1J1HylfGEFbRG4zKeAvOeBLdHKMZ+GI15KETk+0EwEdyfhhhH43gqRtmkR9FOfhvu8NBom2NwL5fZPn6+/nf8n+/4b66ll1+P3Vo6V6hl/cRzsttJmJMKFpPueTnaS73z5Lp39rvJ/1u7yY94+3tDG6oj9+YX1MG3yDOr6uYnGEupa5cJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d7f0e36283ef6610b89651c6feaad388"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8bf0e36283ef6610b89651c6feaad336"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8bf0e36283ef6610b89651c6feaad336^sys_idNOT IN1ff0e36283ef6610b89651c6feaad37d,5ff0e36283ef6610b89651c6feaad381,9bf0e36283ef6610b89651c6feaad37f,9bf0e36283ef6610b89651c6feaad382,d7f0e36283ef6610b89651c6feaad380,d7f0e36283ef6610b89651c6feaad383"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">03a5e6ff831f2210b89651c6feaad380</block>
@@ -790,7 +790,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</flow>
+        <flow display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -799,42 +799,15 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>7839dfae836f6610b89651c6feaad334</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>1ff0e36283ef6610b89651c6feaad37d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:36</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
         <ui_id>1bb1cba5-1ad0-4f92-82de-29b5de88a20a</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+2UW2/iMBCF/wrKcxQloaAtT1v1IqHtFmlBfVlV0cSegFXHztoOlEX89x3nQlFLd6uqj/uGz9gz50w+sQt07ara2YW+sFYsVTD5+RAGQnmNfu8CBSUGk4BpxYUTWmWNEAZrkLUvXK6QPQ7mqDiawZUuQSiqcmErCdv7v15iKyG5wW5mBYY6OzTBZPei5LYVZhJylNRr7oxQS3ouOJ2KGIrknCVsmI6HaRynX86SfDzMk5QPAWFI9/qHl32EwW2jhG9m8/NIt/0kbbi3lcRhgE/Op6DRBUiLYVCC4uC02R4Ug8BnSj4LK6EctQv85ScrflPvdDTyFwukjAzb4uGYddtrZbbSguGs8gZbxUEuuzdMy7pUd20Ov3csoJau3zsptaV+WHnT3kVnqZiv9OZHP/BGqCZgV5SagTycwNEa8tqh9R8GJZbUKCuhqmg5WWX0WjSPyUsZLSUdokLqDQ31PEXAvPGIdgTRDelXjXwPRvgU36kNPW5t5mAFyxr2qJ0zFGHfrCX7VXtDbcAuStZugy5YZkTlLmjOGjvX+/A1uEfM7nZTleta8cE1oSizJCqMLjPghJy1+/3dbDG4nX67/sqgWmIplIgo3GusP9znM8g/h1ExSuLRafLPxqfIP8H827in/8Ddf6B30h7H8X/cj3EXNmux7bI1wz9M+4NHu51gW244MmHJyMJr0/7f3Be2BIBgx9JGm0cf4Vnb/wHPBT6xFwYAAA==</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">113aa6b7835f2210b89651c6feaad3b1</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>5</order>
-        <outputs_assigned/>
-        <parent_ui_id>25629989-a7e3-4c66-9040-861f20160f7b</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>b039dfae836f6610b89651c6feaad337</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:36</sys_updated_on>
-        <ui_id>2c26a19b-88e0-44c5-8646-337bcad94def</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/51Sy27jMAz8F50Twy84TW4FigI9bAt0i14WhUFLdCKsLGklOalr+N+Xip206LEnm0NyOCNyZKYPtg/+xdx6L/ea7f68rZjUEaP/kWnokO2YDNh5tmJHUH2Mx7HYlGKTZeW64ALWJW5wDVuRrwvMqoqXBKRl8ozcOOGniVqF9FbB8PpzBn6QSjhcRFpwpC2gY7vxWyoMFmsFDSoatDBQvxQUZlvRbrN0y4u8KvI0zW/KrKmKJstFASgqqrt0Piymv71BZKfQXXnpE1Xk6Yrhe0AtkAa1oDyuWAdaQDBuYLvgegIcgnjSarhWHKQORMdi7buXH8SdpWksbJEccZyT17BeHnKG+cFIjk82SKNnJECjlh5uVN/px1l+XAG20KtwWQEhvSc+tFFzVLFIan8fzOn5MvBe6rO/JakMB3WNIAQnmz6gj2tAhR0R1R1YK/W+ts4c5bmZtHTJXlGQtMqcaGg8twR4FJ7QE0FyT/jdGX4FJ6OLX0RDzdPZff2vj3NnH4viejZNBZ47acMt0R1xETe9xXudmfx8GAK59DTwJWIPlyuPiYGWLPlX6GTc3yj1E5v+AwjhpkAvAwAA</values>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPUZSEgtY+rYJWQmNFGqgvUxXd2A5YdezMdqAs4r/vOh+AVvbRbY97w+fa955zco+oia5cWTm70rfWirUiN5+fAiKUx/B3TRQUnNwQqhUTTmiVNkBAtiArX5hsOH0eLLli3AymugChsMqELSXsH396iW6EZIZ3M0sw2NlxQ27q70qCYY88gjy+pjEdJuNhEkXJu6s4Gw+zOGFD4DDEhhIyLv24nuxg3iDBD1W4felx64xQ6+4877ose1Ab5lnFUUD4i/MikE8O0vKAFKAYOG32R8RwYAslT8BGKIftiL/8YsVXHJiMRv5izlEi5W3xeEw781o4n4IDpFJRV5nuKt1oQbltzWE8h0q6yTnWXliUXmr7xEEm+9daVoV6aB0hxwb9t0KkskiCl16pp97pyJcbvfvUs7wXqnGlK0pNQR5P4NC7rHKeT0245AU2SgsoS3Q0LY3eiuYxcinCtcRDmEu9w6F+B0OgnniIxkJ4j/i0gR/BCK/iI7bBxy3NDKygabOv2A5t4uQQELu3EwnWnkSiu+mXylNsJXfi0tYf/4QaUbpbnLzlnY5D8Hr9zza/rmcq05VigztcaJnGYW50kQLDxbX2cHhYrAbz2Ye79xTKNS+EEiHKfR2OP+7ztvxcwygfxdHocn6uxpfycyE5bwxN8ovQ+C/2m5mJouh/aP46NMKm7ap32prh/zAzTz4g7cyj11RYpLby2Kz/Z/GFPS6XoOfQTptnL+qEHb4B0p12F6MGAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -844,7 +817,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</flow>
+        <flow display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
@@ -853,12 +826,12 @@
         <parent_ui_id>2c26a19b-88e0-44c5-8646-337bcad94def</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>b839dfae836f6610b89651c6feaad338</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>5ff0e36283ef6610b89651c6feaad381</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:36</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
         <ui_id>0c1316d6-8dca-4848-a5d4-687c554f9ca9</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
@@ -871,7 +844,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Copy of Create Incident from External Emails">ec399fae836f6610b89651c6feaad3a6</flow>
+        <flow display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -880,54 +853,112 @@
         <parent_ui_id>1bb1cba5-1ad0-4f92-82de-29b5de88a20a</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>f039dfae836f6610b89651c6feaad336</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>9bf0e36283ef6610b89651c6feaad37f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:44:36</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
         <ui_id>25629989-a7e3-4c66-9040-861f20160f7b</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUBnWdDLduObkSJAgbYBmiCXNhBW5MomSpEqSdlxDf97l3o4RmOjRdBjb9rZ18xyoH2gW9e0zj7opbVipYLF16cwEMpj9L0PFNQYLAKmFRdOaFV0QBhsQLY+sXQO2LpG5a6Ac+SU4sI2EnaPlyvYWkhucNjWgKGZDk2w2P+WcrsGCwklShp074xQK2oXnKIqhiq5ZgnL0lmWxnH6Lk/KWVYmKc8AIaO6sfFmJH/1sUPCi6r8PsLtuEkb7mklcRjgs0Pl6S8qkBbDoAbFwWmzOyIGgd8p+QKshXI0LvDFz1b8pNnpdOoLKySNDPvkMSyG0/UwW2vB8K7xBHvEQSmHHqZlW6vPvQ5/dKyglW48OiGtpXnYeNKexUCpul/r7Zdx4a1QncAhKTUDeYzA0RnK1qH1D4MS/RsWNTQNHadojN6Irpm41NFKUhBVUm9pqXdSBMwTj+hGEN0S/r6DH8EIr+ITjaHmnmYJVrCicx2Nc4YkHLqzFD9aT6gXOEgp+mtQgWVGNG5JezY4sD6Ery174tb9PpvnfJ4k+SRjHCY5znEC1zydZJjMZiwnIM6jG90qdzh8a+M4w/i1pd865l/4/hqm1TSJp+d9n8/O+f6M4y+bPf2D2f3z/KXX4zj+b/ZTswtb9KYdtHXL3+z1J2/sfoPtfcORCUtEHjz2YfyL+8SODCDYKbTV5ruX8IIdfgGwmSaYDwYAAA==</values>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBn2dDLdu2b4SBAgbQBmiCXNhBWJGUTpUhVJO24gv+9Sz1so3HQpu2xN3F2uTs73IEaop2tnDUPemmMWCuy+PwUEKE8ht8NUVBysiBUKyas0CprgYBsQTofWFoLdFNyZa+AMc4wxISpJOwfX8+gGyFZzftuFdRY0/KaLJqfQoJhgSKEIprTiCbxNInDMH6XRvk0yaOYJcAhwYISci4xdTXQvLptkeBV/nZfedzYWqh1f77tq9wPoK6ZZxWFAeHPlivPflGANDwgJSgGVtf7I1JzYHdKnoCNUBbLEZ/8bMR3bBhPJj6x4Dgi5V3weMx65Tq4uAYLSMVR6+o+lW60oNx04jBegJN2dY51CXeVH7W7YiGXw20tXak+doqQY4HhoRBxBknwyk/qqfdzFPcbvfs0sLwRqlWlD0pNQR5PYFG73FnPpyFccv/uWQlVhYpmVa23or2MXMrxWuJhXEi9w6Z++8ZAPfExCgvjG8SvW/gRauGn+IBl8HJHMwcjaNZuKpZDmTg5BMTszUqCMachUd3sm/MUu5H74bJOH3+F1qKyS+y85f0ch+Dl4p/tfNMks5TNoigdJZTBKOUzPoI5i0cJj6ZTmiIQpuOVdsoeDl9cGCY8fGmMPy3zNvfMYVJMonBy2T3p9JJ7LvjmjZaJf2EZ/16/6ZgwDP9b5q8tI0zWLXo/W9v8Hzrmyduj63nUmgqD1B489n74o/jAHpdL0HNop+uvfqgTdvgBRSIWBpsGAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ec399fae836f6610b89651c6feaad3a6"/>
-    <sys_hub_flow_variable action="delete_multiple" query="model=ec399fae836f6610b89651c6feaad3a6"/>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>subject</element>
-        <help/>
-        <hint/>
-        <label>Subject</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">913aa6b7835f2210b89651c6feaad3b4</block>
+        <comment/>
+        <connected_to>25629989-a7e3-4c66-9040-861f20160f7b</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>1bb1cba5-1ad0-4f92-82de-29b5de88a20a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>38399fae836f6610b89651c6feaad3ec</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name/>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>9bf0e36283ef6610b89651c6feaad382</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:43:31</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
+        <ui_id>5431688e-71df-4393-b5a2-4fee9664aebd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">113aa6b7835f2210b89651c6feaad3b1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>25629989-a7e3-4c66-9040-861f20160f7b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>d7f0e36283ef6610b89651c6feaad380</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
+        <ui_id>2c26a19b-88e0-44c5-8646-337bcad94def</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L34miC+RS96qVpUqtVcprfpyqqLFXhLrjM3ZJimH+O+3DoRWfbwn2PHu7MxgBmY633bevZob5+RBs+2v94hJHTB6H5iGBtmWSY+NYxE7gepCPQz5uhDrNC1WORewKnCNK9iIbJVjWpa8ICAp4h1yY4UbRxoV0rUK+rf/Z+BHqYTFWWQLlrR5tGw7fDuSghakG1Fv0mTD86zMsyTJfhRpVeZVmokcUJREqKBCRa0Ps7tvZn3fhtJOEmbgcZ7ZLSg9gogsiRh+eNQCaX0NymHEGtACvLE923rbEWARxLNW/dJxlNoTHQu9H07+pY1pkoTGGskQx+lwKfdzjhNc34GHF6LmvrNzKz8aydFNUQisoVP+9is2NTy3Xho9jXio1HXaqK7RP6ck2EJw/WyEdI5EYBuMBumzj/rlaM67q8p7qS+hzIfKcFBLBd5bWXU+6BkYKmyIaN9A20p92LfWnORlmLQ08UFREdfKnGlpuKIx8CA8plwhvif87gK/gZXBxRPR0PAYMde7WwXOfXqhEPd/uqBkcjZ72E8xhBFuZetvaMEJZ7nje7j1E/eSKZeOJLwG7OH6r4SDnm6Q5F+hs7G/g/hPbPwHVnLDynUDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">193aa6b7835f2210b89651c6feaad3b5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Copy of Create Incident from External Emails">8bf0e36283ef6610b89651c6feaad336</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>5431688e-71df-4393-b5a2-4fee9664aebd</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>d7f0e36283ef6610b89651c6feaad383</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
+        <ui_id>9439f7fd-c85c-4671-ab5f-bed7caffb5ab</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8bf0e36283ef6610b89651c6feaad336"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8bf0e36283ef6610b89651c6feaad336"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>target_record</element>
         <help/>
         <hint/>
         <label>Target Record</label>
         <language>en</language>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>3839dfae836f6610b89651c6feaad324</sys_id>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>1bf0e36283ef6610b89651c6feaad369</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
@@ -935,7 +966,30 @@
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:43:31</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>subject</element>
+        <help/>
+        <hint/>
+        <label>Subject</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>57f0e36283ef6610b89651c6feaad357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -945,12 +999,12 @@
         <hint/>
         <label>Target Table</label>
         <language>en</language>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:30</sys_created_on>
-        <sys_id>74399fae836f6610b89651c6feaad3e6</sys_id>
+        <sys_created_on>2025-08-27 07:17:32</sys_created_on>
+        <sys_id>5bf0e36283ef6610b89651c6feaad351</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
@@ -958,53 +1012,7 @@
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:43:30</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>body_text</element>
-        <help/>
-        <hint/>
-        <label>Body Text</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>b4399fae836f6610b89651c6feaad3e9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:43:31</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>user</element>
-        <help/>
-        <hint/>
-        <label>User</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>b439dfae836f6610b89651c6feaad321</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:43:31</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:32</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1014,12 +1022,12 @@
         <hint/>
         <label>From address</label>
         <language>en</language>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:31</sys_created_on>
-        <sys_id>b839dfae836f6610b89651c6feaad327</sys_id>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>97f0e36283ef6610b89651c6feaad36c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
@@ -1027,7 +1035,53 @@
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:43:31</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user</element>
+        <help/>
+        <hint/>
+        <label>User</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 07:17:33</sys_created_on>
+        <sys_id>d3f0e36283ef6610b89651c6feaad35a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 07:17:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body_text</element>
+        <help/>
+        <hint/>
+        <label>Body Text</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 07:17:32</sys_created_on>
+        <sys_id>d7f0e36283ef6610b89651c6feaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 07:17:32</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1037,12 +1091,12 @@
         <hint>The record representing the inbound email.</hint>
         <label>Inbound Email</label>
         <language>en</language>
-        <name>var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6</name>
+        <name>var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-27 06:43:30</sys_created_on>
-        <sys_id>f0399fae836f6610b89651c6feaad3e3</sys_id>
+        <sys_created_on>2025-08-27 07:17:32</sys_created_on>
+        <sys_id>dbf0e36283ef6610b89651c6feaad34e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Proof of Concept with Senario Base Scripting" source="x_1040499_ip_looku">32ec205953ea521005707ab0a0490e15</sys_package>
@@ -1050,12 +1104,12 @@
         <sys_scope display_value="Proof of Concept with Senario Base Scripting">32ec205953ea521005707ab0a0490e15</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 06:43:30</sys_updated_on>
+        <sys_updated_on>2025-08-27 07:17:32</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ec399fae836f6610b89651c6feaad3a6"/>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ec399fae836f6610b89651c6feaad3a6"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ec399fae836f6610b89651c6feaad3a6"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ec399fae836f6610b89651c6feaad3a6"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8bf0e36283ef6610b89651c6feaad336"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8bf0e36283ef6610b89651c6feaad336"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=8bf0e36283ef6610b89651c6feaad336"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=8bf0e36283ef6610b89651c6feaad336"/>
 </record_update>
